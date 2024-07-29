@@ -79,10 +79,10 @@ psql --username "${username}" \
      --file "$PROJECT_DIR/users/functions/settings/fetch_user_settings.sql" \
      --file "$PROJECT_DIR/users/functions/settings/fetch_one_user_setting.sql" \
      --file "$PROJECT_DIR/users/triggers/check_setting_is_not_repeated.sql" \
-     --file "$PROJECT_DIR/users/seeds/000_role_seed.sql" \
-     --file "$PROJECT_DIR/users/seeds/001_user_seed.sql" \
-     --file "$PROJECT_DIR/users/seeds/002_predfined_user_setting_seed.sql" \
-     --file "$PROJECT_DIR/users/seeds/003_user_setting_seed.sql" \
+     --file "$PROJECT_DIR/users/seeds/roles_seed.sql" \
+     --file "$PROJECT_DIR/users/seeds/users_seed.sql" \
+     --file "$PROJECT_DIR/users/seeds/predefined_user_settings_seed.sql" \
+     --file "$PROJECT_DIR/users/seeds/user_settings_seed.sql" \
 \
      --file "$PROJECT_DIR/groups/tables/group_table.sql" \
      --file "$PROJECT_DIR/groups/tables/group_table.sql" \

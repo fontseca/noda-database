@@ -1,5 +1,5 @@
 INSERT INTO "users"."user"
-("role_uuid", "first_name", "middle_name", "last_name", "surname", "picture_url", "email", "password")
+("role_id", "first_name", "middle_name", "last_name", "surname", "picture_url", "email", "password")
 VALUES (1, 'Holli', 'Alexander', 'Torello', 'Smith', 'http://dummyimage.com/235x100.png/5fa2dd/ffffff',
         'holli@mail.com',
         '$2a$10$ODkl/7qJaSbpg025Ddhu5ewRDsKUOk8L2M6YYnzIW4N9t8mAyGRHC'),
