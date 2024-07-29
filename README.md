@@ -9,6 +9,9 @@
 **NODA** is a task management RESTful API designed to simplify the process of managing tasks, lists, and user
 interactions. This is the PostgreSQL database repository for the **NODA** project.
 
+![database diagram](./diagram_v1.svg)
+*Entity–relationship model for the **NODA** database (designed with [Vertabelo](https://vertabelo.com/)).*
+
 ## Installation
 
 For installing the database, follow the instructions

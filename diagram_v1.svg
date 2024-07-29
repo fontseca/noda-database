@@ -1,0 +1,1572 @@
+<svg width="1089" height="1200" xmlns="http://www.w3.org/2000/svg">
+ <desc>{"leftTopX": 6507, "leftTopY": 6716, "rightBottomX": 7626, "rightBottomY": 7946}</desc>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_5">
+   <g id="svg_6" class="area">
+    <g id="svg_7">
+     <rect id="svg_8" x="5" y="5" width="672" stroke-dasharray="5,5" stroke="#000000" height="559" fill="#EAD1DC"/>
+    </g>
+    <g id="svg_9">
+     <text id="svg_10" y="542.98828" x="617.97314" font-weight="700" font-size="15" font-family="arial, sans-serif" fill="#000000">users</text>
+    </g>
+   </g>
+   <g id="svg_11" class="area">
+    <g id="svg_12">
+     <rect id="svg_13" x="691" y="407" width="393" stroke-dasharray="5,5" stroke="#000000" height="178" fill="#CFE2F3"/>
+    </g>
+    <g id="svg_14">
+     <text id="svg_15" y="563.98828" x="1014.16992" font-weight="700" font-size="15" font-family="arial, sans-serif" fill="#000000">groups</text>
+    </g>
+   </g>
+   <g id="svg_16" class="area">
+    <g id="svg_17">
+     <rect id="svg_18" x="693" y="599" width="391" stroke-dasharray="5,5" stroke="#000000" height="596" fill="#FCE5CD"/>
+    </g>
+    <g id="svg_19">
+     <text id="svg_20" y="1173.98828" x="1034.98535" font-weight="700" font-size="15" font-family="arial, sans-serif" fill="#000000">lists</text>
+    </g>
+   </g>
+   <g id="svg_21" class="area">
+    <g id="svg_22">
+     <rect id="svg_23" x="5" y="584" width="673" stroke-dasharray="5,5" stroke="#000000" height="611" fill="#D9EAD3"/>
+    </g>
+    <g id="svg_24">
+     <text id="svg_25" y="1173.98828" x="620.63574" font-weight="700" font-size="15" font-family="arial, sans-serif" fill="#000000">tasks</text>
+    </g>
+   </g>
+   <g id="svg_26" class="area">
+    <g id="svg_27">
+     <rect id="svg_28" x="692" y="6" width="390" stroke-dasharray="5,5" stroke="#000000" height="167" fill="#E6B8AF"/>
+    </g>
+    <g id="svg_29">
+     <text id="svg_30" y="151.98828" x="1000.49512" font-weight="700" font-size="15" font-family="arial, sans-serif" fill="#000000">common</text>
+    </g>
+   </g>
+   <g id="svg_31" class="area">
+    <g id="svg_32">
+     <rect id="svg_33" x="693" y="190" width="389" stroke-dasharray="5,5" stroke="#000000" height="202" fill="#D9D2E9"/>
+    </g>
+    <g id="svg_34">
+     <text id="svg_35" y="370.98828" x="974.64063" font-weight="700" font-size="15" font-family="arial, sans-serif" fill="#000000">attachments</text>
+    </g>
+   </g>
+   <g id="svg_36" class="reference">
+    <polyline id="svg_37" stroke="#000000" points="375,245 375,109 225,109 " fill="none"/>
+    <g id="svg_38" class="cardinality">
+     <line id="svg_39" y2="103" y1="109" x2="235" x1="250" stroke="#000000"/>
+     <line id="svg_40" y2="115" y1="109" x2="235" x1="250" stroke="#000000"/>
+     <line id="svg_41" y2="115" y1="103" x2="250" x1="250" stroke="#000000"/>
+    </g>
+    <g id="svg_42" class="mandatory">
+     <line id="svg_43" y2="220" y1="220" x2="381" x1="369" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_44" class="reference">
+    <polyline id="svg_45" stroke="#000000" points="456,92 456,245 415,245 " fill="none"/>
+    <g id="svg_46" class="cardinality">
+     <line id="svg_47" y2="235" y1="220" x2="450" x1="456" stroke="#000000"/>
+     <line id="svg_48" y2="235" y1="220" x2="462" x1="456" stroke="#000000"/>
+     <line id="svg_49" y2="220" y1="220" x2="462" x1="450" stroke="#000000"/>
+    </g>
+    <g id="svg_50" class="mandatory">
+     <line id="svg_51" y2="133" y1="133" x2="462" x1="450" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_52" class="reference">
+    <polyline id="svg_53" stroke="#000000" points="112,220 112,131 " fill="none"/>
+    <g id="svg_54" class="cardinality">
+     <line id="svg_55" y2="141" y1="156" x2="106" x1="112" stroke="#000000"/>
+     <line id="svg_56" y2="141" y1="156" x2="118" x1="112" stroke="#000000"/>
+     <g id="svg_57">
+      <circle id="svg_58" cx="112" cy="156" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_59" class="mandatory">
+     <line id="svg_60" y2="189" y1="189" x2="118" x1="106" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_61" class="reference">
+    <polyline id="svg_62" stroke="#000000" points="443,411 443,659 " fill="none"/>
+    <g id="svg_63" class="cardinality">
+     <line id="svg_64" y2="622" y1="607" x2="437" x1="443" stroke="#000000"/>
+     <line id="svg_65" y2="622" y1="607" x2="449" x1="443" stroke="#000000"/>
+     <g id="svg_66">
+      <circle id="svg_67" cx="443" cy="607" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_68" class="mandatory">
+     <line id="svg_69" y2="436" y1="436" x2="449" x1="437" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_70" class="reference">
+    <polyline id="svg_71" stroke="#000000" points="480,851 480,935 " fill="none"/>
+    <g id="svg_72" class="cardinality">
+     <line id="svg_73" y2="914" y1="899" x2="474" x1="480" stroke="#000000"/>
+     <line id="svg_74" y2="914" y1="899" x2="486" x1="480" stroke="#000000"/>
+     <g id="svg_75">
+      <circle id="svg_76" cx="480" cy="899" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_77" class="mandatory">
+     <line id="svg_78" y2="883" y1="883" x2="486" x1="474" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_79" class="reference">
+    <polyline id="svg_80" stroke="#000000" points="498,1076 498,970 " fill="none"/>
+    <g id="svg_81" class="cardinality">
+     <line id="svg_82" y2="980" y1="995" x2="492" x1="498" stroke="#000000"/>
+     <line id="svg_83" y2="980" y1="995" x2="504" x1="498" stroke="#000000"/>
+     <g id="svg_84">
+      <circle id="svg_85" cx="498" cy="995" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_86" class="mandatory">
+     <line id="svg_87" y2="1011" y1="1011" x2="504" x1="492" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_88" class="reference">
+    <polyline id="svg_89" stroke="#000000" points="390,858 390,653 200,653 " fill="none"/>
+    <g id="svg_90" class="cardinality">
+     <line id="svg_91" y2="647" y1="653" x2="257" x1="272" stroke="#000000"/>
+     <line id="svg_92" y2="659" y1="653" x2="257" x1="272" stroke="#000000"/>
+     <g id="svg_93">
+      <circle id="svg_94" cx="272" cy="653" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_95" class="mandatory">
+     <line id="svg_96" y2="659" y1="647" x2="365" x1="365" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_97" class="reference">
+    <polyline id="svg_98" stroke="#000000" points="473,411 473,495 790,495 " fill="none"/>
+    <g id="svg_99" class="cardinality">
+     <line id="svg_100" y2="489" y1="495" x2="780" x1="765" stroke="#000000"/>
+     <line id="svg_101" y2="501" y1="495" x2="780" x1="765" stroke="#000000"/>
+     <g id="svg_102">
+      <circle id="svg_103" cx="765" cy="495" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_104" class="mandatory">
+     <line id="svg_105" y2="436" y1="436" x2="479" x1="467" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_106" class="reference">
+    <polyline id="svg_107" stroke="#000000" points="567,368 811,368 811,744 " fill="none"/>
+    <g id="svg_108" class="cardinality">
+     <line id="svg_109" y2="734" y1="719" x2="805" x1="811" stroke="#000000"/>
+     <line id="svg_110" y2="734" y1="719" x2="817" x1="811" stroke="#000000"/>
+     <g id="svg_111">
+      <circle id="svg_112" cx="811" cy="719" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_113" class="mandatory">
+     <line id="svg_114" y2="374" y1="362" x2="592" x1="592" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_115" class="reference">
+    <polyline id="svg_116" stroke="#000000" points="878,530 878,780 " fill="none"/>
+    <g id="svg_117" class="cardinality">
+     <line id="svg_118" y2="734" y1="719" x2="872" x1="878" stroke="#000000"/>
+     <line id="svg_119" y2="734" y1="719" x2="884" x1="878" stroke="#000000"/>
+     <g id="svg_120">
+      <circle id="svg_121" cx="878" cy="719" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_122" class="mandatory">
+     <line id="svg_123" y2="564" y1="564" x2="884" x1="872" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_124" class="reference">
+    <polyline id="svg_125" stroke="#000000" points="926,847 926,970 " fill="none"/>
+    <g id="svg_126" class="cardinality">
+     <g id="svg_127">
+      <circle id="svg_128" cx="926" cy="922" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_129" class="mandatory">
+     <line id="svg_130" y2="880" y1="880" x2="932" x1="920" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_131" class="reference">
+    <polyline id="svg_132" stroke="#000000" points="539,322 733,322 733,984 802,984 " fill="none"/>
+    <g id="svg_133" class="cardinality">
+     <line id="svg_134" y2="978" y1="984" x2="792" x1="777" stroke="#000000"/>
+     <line id="svg_135" y2="990" y1="984" x2="792" x1="777" stroke="#000000"/>
+     <g id="svg_136">
+      <circle id="svg_137" cx="777" cy="984" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_138" class="mandatory">
+     <line id="svg_139" y2="328" y1="316" x2="592" x1="592" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_140" class="reference">
+    <polyline id="svg_141" stroke="#000000" points="772,757 537,757 537,867 627,867 " fill="none"/>
+    <g id="svg_142" class="cardinality">
+     <line id="svg_143" y2="751" y1="757" x2="655" x1="670" stroke="#000000"/>
+     <line id="svg_144" y2="763" y1="757" x2="655" x1="670" stroke="#000000"/>
+     <g id="svg_145">
+      <circle id="svg_146" cx="670" cy="757" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_147" class="mandatory">
+     <line id="svg_148" y2="763" y1="751" x2="746" x1="746" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_149" class="reference">
+    <polyline id="svg_150" stroke="#000000" points="508,273 822,273 " fill="none"/>
+    <g id="svg_151" class="cardinality">
+     <line id="svg_152" y2="267" y1="273" x2="767" x1="752" stroke="#000000"/>
+     <line id="svg_153" y2="279" y1="273" x2="767" x1="752" stroke="#000000"/>
+     <g id="svg_154">
+      <circle id="svg_155" cx="752" cy="273" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_156" class="mandatory">
+     <line id="svg_157" y2="279" y1="267" x2="592" x1="592" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_158" class="reference">
+    <polyline id="svg_159" stroke="#000000" points="608,632 608,303 874,303 874,337 " fill="none"/>
+    <g id="svg_160" class="cardinality">
+     <line id="svg_161" y2="297" y1="303" x2="767" x1="752" stroke="#000000"/>
+     <line id="svg_162" y2="309" y1="303" x2="767" x1="752" stroke="#000000"/>
+     <g id="svg_163">
+      <circle id="svg_164" cx="752" cy="303" stroke="#000000" r="3.5" fill="white"/>
+     </g>
+    </g>
+    <g id="svg_165" class="mandatory">
+     <line id="svg_166" y2="607" y1="607" x2="614" x1="602" stroke="#000000"/>
+    </g>
+   </g>
+   <g id="svg_167" class="table">
+    <g id="svg_168">
+     <rect id="svg_169" x="418" y="57" width="164" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_170">
+     <text id="svg_171" y="71.19062" x="501" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">role</text>
+    </g>
+    <g id="svg_172">
+     <rect id="svg_173" x="418" y="77" width="164" height="41" fill="#ffffff"/>
+     <g id="svg_174">
+      <g id="svg_175">
+       <text id="svg_176" y="91.13867" x="423" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">id</text>
+      </g>
+      <g id="svg_177">
+       <text id="svg_178" y="105.13867" x="423" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">name</text>
+      </g>
+     </g>
+     <g id="svg_179">
+      <g id="svg_180">
+       <text id="svg_181" y="91.13867" x="476.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">SMALLINT</text>
+      </g>
+      <g id="svg_182">
+       <text id="svg_183" y="105.13867" x="476.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+     </g>
+     <g id="svg_184">
+      <g id="svg_185">
+       <text id="svg_186" y="91.13867" x="563.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_187">
+       <text id="svg_188" y="105.13867" x="563.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_189" stroke="#000000" points="418,77 418,57 582,57 582,77 418,77 418,118 582,118 582,77 " fill="none"/>
+   </g>
+   <g id="svg_190" class="table">
+    <g id="svg_191">
+     <rect id="svg_192" x="344" y="235" width="233" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_193">
+     <text id="svg_194" y="249.19063" x="461.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">user</text>
+    </g>
+    <g id="svg_195">
+     <rect id="svg_196" x="344" y="255" width="233" height="166" fill="#ffffff"/>
+     <g id="svg_197">
+      <g id="svg_198">
+       <text id="svg_199" y="269.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">user_uuid</text>
+      </g>
+      <g id="svg_200">
+       <text id="svg_201" y="283.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">role_id</text>
+      </g>
+      <g id="svg_202">
+       <text id="svg_203" y="297.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">first_name</text>
+      </g>
+      <g id="svg_204">
+       <text id="svg_205" y="311.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">middle_name</text>
+      </g>
+      <g id="svg_206">
+       <text id="svg_207" y="325.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">last_name</text>
+      </g>
+      <g id="svg_208">
+       <text id="svg_209" y="339.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">surname</text>
+      </g>
+      <g id="svg_210">
+       <text id="svg_211" y="353.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">picture_url</text>
+      </g>
+      <g id="svg_212">
+       <text id="svg_213" y="367.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">email</text>
+      </g>
+      <g id="svg_214">
+       <text id="svg_215" y="381.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">password</text>
+      </g>
+      <g id="svg_216">
+       <text id="svg_217" y="395.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_218">
+       <text id="svg_219" y="409.13867" x="349" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+     </g>
+     <g id="svg_220">
+      <g id="svg_221">
+       <text id="svg_222" y="269.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_223">
+       <text id="svg_224" y="283.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">SMALLINT</text>
+      </g>
+      <g id="svg_225">
+       <text id="svg_226" y="297.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_227">
+       <text id="svg_228" y="311.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_229">
+       <text id="svg_230" y="325.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_231">
+       <text id="svg_232" y="339.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_233">
+       <text id="svg_234" y="353.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(2048)</text>
+      </g>
+      <g id="svg_235">
+       <text id="svg_236" y="367.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">email_t</text>
+      </g>
+      <g id="svg_237">
+       <text id="svg_238" y="381.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">bytea</text>
+      </g>
+      <g id="svg_239">
+       <text id="svg_240" y="395.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_241">
+       <text id="svg_242" y="409.13867" x="456" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_243">
+      <g id="svg_244">
+       <text id="svg_245" y="269.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_246">
+       <text id="svg_247" y="283.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_248">
+       <text id="svg_249" y="297.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_250">
+       <text id="svg_251" y="311.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_252">
+       <text id="svg_253" y="325.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_254">
+       <text id="svg_255" y="339.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_256">
+       <text id="svg_257" y="353.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_258">
+       <text id="svg_259" y="367.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_260">
+       <text id="svg_261" y="381.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_262">
+       <text id="svg_263" y="395.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_264">
+       <text id="svg_265" y="409.13867" x="558.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_266" stroke="#000000" points="344,255 344,235 577,235 577,255 344,255 344,421 577,421 577,255 " fill="none"/>
+   </g>
+   <g id="svg_267" class="table">
+    <g id="svg_268">
+     <rect id="svg_269" x="22" y="306" width="262" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_270">
+     <text id="svg_271" y="320.19063" x="154" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">blocked_user</text>
+    </g>
+    <g id="svg_272">
+     <rect id="svg_273" x="22" y="326" width="262" height="219" fill="#ffffff"/>
+     <g id="svg_274">
+      <g id="svg_275">
+       <text id="svg_276" y="340.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">user_uuid</text>
+      </g>
+      <g id="svg_277">
+       <text id="svg_278" y="354.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">role_id</text>
+      </g>
+      <g id="svg_279">
+       <text id="svg_280" y="368.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">first_name</text>
+      </g>
+      <g id="svg_281">
+       <text id="svg_282" y="382.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">middle_name</text>
+      </g>
+      <g id="svg_283">
+       <text id="svg_284" y="396.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">last_name</text>
+      </g>
+      <g id="svg_285">
+       <text id="svg_286" y="410.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">surname</text>
+      </g>
+      <g id="svg_287">
+       <text id="svg_288" y="424.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">picture_url</text>
+      </g>
+      <g id="svg_289">
+       <text id="svg_290" y="438.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">email</text>
+      </g>
+      <g id="svg_291">
+       <text id="svg_292" y="452.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">password</text>
+      </g>
+      <g id="svg_293">
+       <text id="svg_294" y="466.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_295">
+       <text id="svg_296" y="480.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+      <g id="svg_297">
+       <text id="svg_298" y="494.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">reason</text>
+      </g>
+      <g id="svg_299">
+       <text id="svg_300" y="508.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">blocked_at</text>
+      </g>
+      <g id="svg_301">
+       <text id="svg_302" y="522.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">blocked_by</text>
+      </g>
+     </g>
+     <g id="svg_303">
+      <g id="svg_304">
+       <text id="svg_305" y="340.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_306">
+       <text id="svg_307" y="354.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">SMALLINT</text>
+      </g>
+      <g id="svg_308">
+       <text id="svg_309" y="368.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_310">
+       <text id="svg_311" y="382.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_312">
+       <text id="svg_313" y="396.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_314">
+       <text id="svg_315" y="410.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_316">
+       <text id="svg_317" y="424.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(2048)</text>
+      </g>
+      <g id="svg_318">
+       <text id="svg_319" y="438.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">email_t</text>
+      </g>
+      <g id="svg_320">
+       <text id="svg_321" y="452.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">bytea</text>
+      </g>
+      <g id="svg_322">
+       <text id="svg_323" y="466.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_324">
+       <text id="svg_325" y="480.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_326">
+       <text id="svg_327" y="494.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(512)</text>
+      </g>
+      <g id="svg_328">
+       <text id="svg_329" y="508.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_330">
+       <text id="svg_331" y="522.13867" x="163" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+     </g>
+     <g id="svg_332">
+      <g id="svg_333">
+       <text id="svg_334" y="340.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_335">
+       <text id="svg_336" y="354.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_337">
+       <text id="svg_338" y="368.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_339">
+       <text id="svg_340" y="382.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_341">
+       <text id="svg_342" y="396.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_343">
+       <text id="svg_344" y="410.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_345">
+       <text id="svg_346" y="424.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_347">
+       <text id="svg_348" y="438.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_349">
+       <text id="svg_350" y="452.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_351">
+       <text id="svg_352" y="466.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_353">
+       <text id="svg_354" y="480.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_355">
+       <text id="svg_356" y="494.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_357">
+       <text id="svg_358" y="508.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_359">
+       <text id="svg_360" y="522.13867" x="265.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_361" stroke="#000000" points="22,326 22,306 284,306 284,326 22,326 22,545 284,545 284,326 " fill="none"/>
+   </g>
+   <g id="svg_362" class="table">
+    <g id="svg_363">
+     <rect id="svg_364" x="22" y="204" width="207" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_365">
+     <text id="svg_366" y="218.19063" x="126.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">predefined_setting</text>
+    </g>
+    <g id="svg_367">
+     <rect id="svg_368" x="22" y="224" width="207" height="53" fill="#ffffff"/>
+     <g id="svg_369">
+      <g id="svg_370">
+       <text id="svg_371" y="238.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">key</text>
+      </g>
+      <g id="svg_372">
+       <text id="svg_373" y="252.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">default_value</text>
+      </g>
+      <g id="svg_374">
+       <text id="svg_375" y="266.13867" x="27" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">description</text>
+      </g>
+     </g>
+     <g id="svg_376">
+      <g id="svg_377">
+       <text id="svg_378" y="238.13867" x="115.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_379">
+       <text id="svg_380" y="252.13867" x="115.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">json</text>
+      </g>
+      <g id="svg_381">
+       <text id="svg_382" y="266.13867" x="115.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(512)</text>
+      </g>
+     </g>
+     <g id="svg_383">
+      <g id="svg_384">
+       <text id="svg_385" y="238.13867" x="210.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_386">
+       <text id="svg_387" y="252.13867" x="210.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_388">
+       <text id="svg_389" y="266.13867" x="210.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_390" stroke="#000000" points="22,224 22,204 229,204 229,224 22,224 22,277 229,277 229,224 " fill="none"/>
+   </g>
+   <g id="svg_391" class="table">
+    <g id="svg_392">
+     <rect id="svg_393" x="21" y="25" width="214" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_394">
+     <text id="svg_395" y="39.19062" x="129" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">setting</text>
+    </g>
+    <g id="svg_396">
+     <rect id="svg_397" x="21" y="45" width="214" height="96" fill="#ffffff"/>
+     <g id="svg_398">
+      <g id="svg_399">
+       <text id="svg_400" y="59.13867" x="26" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">user_setting_uui</text>
+      </g>
+      <g id="svg_401">
+       <text id="svg_402" y="73.13867" x="26" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">user_uuid</text>
+      </g>
+      <g id="svg_403">
+       <text id="svg_404" y="87.13867" x="26" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">key</text>
+      </g>
+      <g id="svg_405">
+       <text id="svg_406" y="101.13867" x="26" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">value</text>
+      </g>
+      <g id="svg_407">
+       <text id="svg_408" y="115.13867" x="26" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_409">
+       <text id="svg_410" y="129.13867" x="26" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+     </g>
+     <g id="svg_411">
+      <g id="svg_412">
+       <text id="svg_413" y="59.13867" x="129.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_414">
+       <text id="svg_415" y="73.13867" x="129.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_416">
+       <text id="svg_417" y="87.13867" x="129.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(50)</text>
+      </g>
+      <g id="svg_418">
+       <text id="svg_419" y="101.13867" x="129.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">json</text>
+      </g>
+      <g id="svg_420">
+       <text id="svg_421" y="115.13867" x="129.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_422">
+       <text id="svg_423" y="129.13867" x="129.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_424">
+      <g id="svg_425">
+       <text id="svg_426" y="59.13867" x="216.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_427">
+       <text id="svg_428" y="73.13867" x="216.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_429">
+       <text id="svg_430" y="87.13867" x="216.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_431">
+       <text id="svg_432" y="101.13867" x="216.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_433">
+       <text id="svg_434" y="115.13867" x="216.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_435">
+       <text id="svg_436" y="129.13867" x="216.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_437" stroke="#000000" points="21,45 21,25 235,25 235,45 21,45 21,141 235,141 235,45 " fill="none"/>
+   </g>
+   <g id="svg_438" class="table">
+    <g id="svg_439">
+     <rect id="svg_440" x="780" y="431" width="214" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_441">
+     <text id="svg_442" y="445.19063" x="888" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">group</text>
+    </g>
+    <g id="svg_443">
+     <rect id="svg_444" x="780" y="451" width="214" height="98" fill="#ffffff"/>
+     <g id="svg_445">
+      <g id="svg_446">
+       <text id="svg_447" y="465.13867" x="785" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">group_uuid</text>
+      </g>
+      <g id="svg_448">
+       <text id="svg_449" y="479.13867" x="785" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">owner_uuid</text>
+      </g>
+      <g id="svg_450">
+       <text id="svg_451" y="493.13867" x="785" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">name</text>
+      </g>
+      <g id="svg_452">
+       <text id="svg_453" y="507.13867" x="785" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">description</text>
+      </g>
+      <g id="svg_454">
+       <text id="svg_455" y="521.13867" x="785" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_456">
+       <text id="svg_457" y="535.13867" x="785" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+     </g>
+     <g id="svg_458">
+      <g id="svg_459">
+       <text id="svg_460" y="465.13867" x="880.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_461">
+       <text id="svg_462" y="479.13867" x="880.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_463">
+       <text id="svg_464" y="493.13867" x="880.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_465">
+       <text id="svg_466" y="507.13867" x="880.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(512)</text>
+      </g>
+      <g id="svg_467">
+       <text id="svg_468" y="521.13867" x="880.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_469">
+       <text id="svg_470" y="535.13867" x="880.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_471">
+      <g id="svg_472">
+       <text id="svg_473" y="465.13867" x="975.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_474">
+       <text id="svg_475" y="479.13867" x="975.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_476">
+       <text id="svg_477" y="493.13867" x="975.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_478">
+       <text id="svg_479" y="507.13867" x="975.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_480">
+       <text id="svg_481" y="521.13867" x="975.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_482">
+       <text id="svg_483" y="535.13867" x="975.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_484" stroke="#000000" points="780,451 780,431 994,431 994,451 780,451 780,549 994,549 994,451 " fill="none"/>
+   </g>
+   <g id="svg_485" class="table">
+    <g id="svg_486">
+     <rect id="svg_487" x="761" y="734" width="221" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_488">
+     <text id="svg_489" y="748.19062" x="872.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">list</text>
+    </g>
+    <g id="svg_490">
+     <rect id="svg_491" x="761" y="754" width="221" height="111" fill="#ffffff"/>
+     <g id="svg_492">
+      <g id="svg_493">
+       <text id="svg_494" y="768.13867" x="766" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">list_uuid</text>
+      </g>
+      <g id="svg_495">
+       <text id="svg_496" y="782.13867" x="766" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">owner_uuid</text>
+      </g>
+      <g id="svg_497">
+       <text id="svg_498" y="796.13867" x="766" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">group_uuid</text>
+      </g>
+      <g id="svg_499">
+       <text id="svg_500" y="810.13867" x="766" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">name</text>
+      </g>
+      <g id="svg_501">
+       <text id="svg_502" y="824.13867" x="766" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">description</text>
+      </g>
+      <g id="svg_503">
+       <text id="svg_504" y="838.13867" x="766" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_505">
+       <text id="svg_506" y="852.13867" x="766" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+     </g>
+     <g id="svg_507">
+      <g id="svg_508">
+       <text id="svg_509" y="768.13867" x="868.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_510">
+       <text id="svg_511" y="782.13867" x="868.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_512">
+       <text id="svg_513" y="796.13867" x="868.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_514">
+       <text id="svg_515" y="810.13867" x="868.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_516">
+       <text id="svg_517" y="824.13867" x="868.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(512)</text>
+      </g>
+      <g id="svg_518">
+       <text id="svg_519" y="838.13867" x="868.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_520">
+       <text id="svg_521" y="852.13867" x="868.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_522">
+      <g id="svg_523">
+       <text id="svg_524" y="768.13867" x="963.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_525">
+       <text id="svg_526" y="782.13867" x="963.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_527">
+       <text id="svg_528" y="796.13867" x="963.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_529">
+       <text id="svg_530" y="810.13867" x="963.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_531">
+       <text id="svg_532" y="824.13867" x="963.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_533">
+       <text id="svg_534" y="838.13867" x="963.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_535">
+       <text id="svg_536" y="852.13867" x="963.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_537" stroke="#000000" points="761,754 761,734 982,734 982,754 761,754 761,865 982,865 982,754 " fill="none"/>
+   </g>
+   <g id="svg_538" class="table">
+    <g id="svg_539">
+     <rect id="svg_540" x="792" y="937" width="257" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_541">
+     <text id="svg_542" y="951.19062" x="921.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">user_special_list</text>
+    </g>
+    <g id="svg_543">
+     <rect id="svg_544" x="792" y="957" width="257" height="67" fill="#ffffff"/>
+     <g id="svg_545">
+      <g id="svg_546">
+       <text id="svg_547" y="971.13867" x="797" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">user_special_list_u</text>
+      </g>
+      <g id="svg_548">
+       <text id="svg_549" y="985.13867" x="797" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">user_uuid</text>
+      </g>
+      <g id="svg_550">
+       <text id="svg_551" y="999.13867" x="797" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">list_uuid</text>
+      </g>
+      <g id="svg_552">
+       <text id="svg_553" y="1013.13867" x="797" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">list_type</text>
+      </g>
+     </g>
+     <g id="svg_554">
+      <g id="svg_555">
+       <text id="svg_556" y="971.13867" x="917.5" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_557">
+       <text id="svg_558" y="985.13867" x="917.5" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_559">
+       <text id="svg_560" y="999.13867" x="917.5" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_561">
+       <text id="svg_562" y="1013.13867" x="917.5" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">special_list_type_t</text>
+      </g>
+     </g>
+     <g id="svg_563">
+      <g id="svg_564">
+       <text id="svg_565" y="971.13867" x="1030.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_566">
+       <text id="svg_567" y="985.13867" x="1030.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_568">
+       <text id="svg_569" y="999.13867" x="1030.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_570">
+       <text id="svg_571" y="1013.13867" x="1030.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_572" stroke="#000000" points="792,957 792,937 1049,937 1049,957 792,957 792,1024 1049,1024 1049,957 " fill="none"/>
+   </g>
+   <g id="svg_573" class="table">
+    <g id="svg_574">
+     <rect id="svg_575" x="380" y="622" width="275" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_576">
+     <text id="svg_577" y="636.19062" x="518.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">task</text>
+    </g>
+    <g id="svg_578">
+     <rect id="svg_579" x="380" y="642" width="275" height="226" fill="#ffffff"/>
+     <g id="svg_580">
+      <g id="svg_581">
+       <text id="svg_582" y="656.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_uuid</text>
+      </g>
+      <g id="svg_583">
+       <text id="svg_584" y="670.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">owner_uuid</text>
+      </g>
+      <g id="svg_585">
+       <text id="svg_586" y="684.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">list_uuid</text>
+      </g>
+      <g id="svg_587">
+       <text id="svg_588" y="698.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">position_in_list</text>
+      </g>
+      <g id="svg_589">
+       <text id="svg_590" y="712.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">title</text>
+      </g>
+      <g id="svg_591">
+       <text id="svg_592" y="726.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">headline</text>
+      </g>
+      <g id="svg_593">
+       <text id="svg_594" y="740.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">description</text>
+      </g>
+      <g id="svg_595">
+       <text id="svg_596" y="754.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">priority</text>
+      </g>
+      <g id="svg_597">
+       <text id="svg_598" y="768.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">status</text>
+      </g>
+      <g id="svg_599">
+       <text id="svg_600" y="782.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">is_pinned</text>
+      </g>
+      <g id="svg_601">
+       <text id="svg_602" y="796.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">due_date</text>
+      </g>
+      <g id="svg_603">
+       <text id="svg_604" y="810.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">remind_at</text>
+      </g>
+      <g id="svg_605">
+       <text id="svg_606" y="824.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">completed_at</text>
+      </g>
+      <g id="svg_607">
+       <text id="svg_608" y="838.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_609">
+       <text id="svg_610" y="852.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+     </g>
+     <g id="svg_611">
+      <g id="svg_612">
+       <text id="svg_613" y="656.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_614">
+       <text id="svg_615" y="670.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_616">
+       <text id="svg_617" y="684.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_618">
+       <text id="svg_619" y="698.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">pos_t</text>
+      </g>
+      <g id="svg_620">
+       <text id="svg_621" y="712.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(128)</text>
+      </g>
+      <g id="svg_622">
+       <text id="svg_623" y="726.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_624">
+       <text id="svg_625" y="740.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(512)</text>
+      </g>
+      <g id="svg_626">
+       <text id="svg_627" y="754.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_priority_t</text>
+      </g>
+      <g id="svg_628">
+       <text id="svg_629" y="768.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_status_t</text>
+      </g>
+      <g id="svg_630">
+       <text id="svg_631" y="782.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">BOOLEAN</text>
+      </g>
+      <g id="svg_632">
+       <text id="svg_633" y="796.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_634">
+       <text id="svg_635" y="810.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_636">
+       <text id="svg_637" y="824.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_638">
+       <text id="svg_639" y="838.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_640">
+       <text id="svg_641" y="852.13867" x="541.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_642">
+      <g id="svg_643">
+       <text id="svg_644" y="656.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_645">
+       <text id="svg_646" y="670.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_647">
+       <text id="svg_648" y="684.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_649">
+       <text id="svg_650" y="698.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_651">
+       <text id="svg_652" y="712.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_653">
+       <text id="svg_654" y="726.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_655">
+       <text id="svg_656" y="740.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_657">
+       <text id="svg_658" y="754.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_659">
+       <text id="svg_660" y="768.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_661">
+       <text id="svg_662" y="782.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_663">
+       <text id="svg_664" y="796.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_665">
+       <text id="svg_666" y="810.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_667">
+       <text id="svg_668" y="824.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_669">
+       <text id="svg_670" y="838.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_671">
+       <text id="svg_672" y="852.13867" x="636.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_673" stroke="#000000" points="380,642 380,622 655,622 655,642 380,642 380,868 655,868 655,642 " fill="none"/>
+   </g>
+   <g id="svg_674" class="table">
+    <g id="svg_675">
+     <rect id="svg_676" x="19" y="745" width="275" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_677">
+     <text id="svg_678" y="759.19062" x="157.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">trashed_task</text>
+    </g>
+    <g id="svg_679">
+     <rect id="svg_680" x="19" y="765" width="275" height="254" fill="#ffffff"/>
+     <g id="svg_681">
+      <g id="svg_682">
+       <text id="svg_683" y="779.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_uuid</text>
+      </g>
+      <g id="svg_684">
+       <text id="svg_685" y="793.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">owner_uuid</text>
+      </g>
+      <g id="svg_686">
+       <text id="svg_687" y="807.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">list_uuid</text>
+      </g>
+      <g id="svg_688">
+       <text id="svg_689" y="821.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">position_in_list</text>
+      </g>
+      <g id="svg_690">
+       <text id="svg_691" y="835.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">title</text>
+      </g>
+      <g id="svg_692">
+       <text id="svg_693" y="849.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">headline</text>
+      </g>
+      <g id="svg_694">
+       <text id="svg_695" y="863.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">description</text>
+      </g>
+      <g id="svg_696">
+       <text id="svg_697" y="877.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">priority</text>
+      </g>
+      <g id="svg_698">
+       <text id="svg_699" y="891.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">status</text>
+      </g>
+      <g id="svg_700">
+       <text id="svg_701" y="905.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">is_pinned</text>
+      </g>
+      <g id="svg_702">
+       <text id="svg_703" y="919.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">due_date</text>
+      </g>
+      <g id="svg_704">
+       <text id="svg_705" y="933.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">remind_at</text>
+      </g>
+      <g id="svg_706">
+       <text id="svg_707" y="947.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">completed_at</text>
+      </g>
+      <g id="svg_708">
+       <text id="svg_709" y="961.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_710">
+       <text id="svg_711" y="975.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+      <g id="svg_712">
+       <text id="svg_713" y="989.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">trashed_at</text>
+      </g>
+      <g id="svg_714">
+       <text id="svg_715" y="1003.13867" x="24" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">destroy_at</text>
+      </g>
+     </g>
+     <g id="svg_716">
+      <g id="svg_717">
+       <text id="svg_718" y="779.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_719">
+       <text id="svg_720" y="793.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_721">
+       <text id="svg_722" y="807.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_723">
+       <text id="svg_724" y="821.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">pos_t</text>
+      </g>
+      <g id="svg_725">
+       <text id="svg_726" y="835.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(128)</text>
+      </g>
+      <g id="svg_727">
+       <text id="svg_728" y="849.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(64)</text>
+      </g>
+      <g id="svg_729">
+       <text id="svg_730" y="863.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(512)</text>
+      </g>
+      <g id="svg_731">
+       <text id="svg_732" y="877.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_priority_t</text>
+      </g>
+      <g id="svg_733">
+       <text id="svg_734" y="891.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_status_t</text>
+      </g>
+      <g id="svg_735">
+       <text id="svg_736" y="905.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">BOOLEAN</text>
+      </g>
+      <g id="svg_737">
+       <text id="svg_738" y="919.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_739">
+       <text id="svg_740" y="933.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_741">
+       <text id="svg_742" y="947.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_743">
+       <text id="svg_744" y="961.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_745">
+       <text id="svg_746" y="975.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_747">
+       <text id="svg_748" y="989.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_749">
+       <text id="svg_750" y="1003.13867" x="180.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_751">
+      <g id="svg_752">
+       <text id="svg_753" y="779.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_754">
+       <text id="svg_755" y="793.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_756">
+       <text id="svg_757" y="807.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_758">
+       <text id="svg_759" y="821.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_760">
+       <text id="svg_761" y="835.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_762">
+       <text id="svg_763" y="849.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_764">
+       <text id="svg_765" y="863.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_766">
+       <text id="svg_767" y="877.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_768">
+       <text id="svg_769" y="891.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_770">
+       <text id="svg_771" y="905.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_772">
+       <text id="svg_773" y="919.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_774">
+       <text id="svg_775" y="933.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_776">
+       <text id="svg_777" y="947.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_778">
+       <text id="svg_779" y="961.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_780">
+       <text id="svg_781" y="975.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_782">
+       <text id="svg_783" y="989.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_784">
+       <text id="svg_785" y="1003.13867" x="275.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_786" stroke="#000000" points="19,765 19,745 294,745 294,765 19,765 19,1019 294,1019 294,765 " fill="none"/>
+   </g>
+   <g id="svg_787" class="table">
+    <g id="svg_788">
+     <rect id="svg_789" x="17" y="596" width="240" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_790">
+     <text id="svg_791" y="610.19062" x="138" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">step</text>
+    </g>
+    <g id="svg_792">
+     <rect id="svg_793" x="17" y="616" width="240" height="111" fill="#ffffff"/>
+     <g id="svg_794">
+      <g id="svg_795">
+       <text id="svg_796" y="630.13867" x="22" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">step_uuid</text>
+      </g>
+      <g id="svg_797">
+       <text id="svg_798" y="644.13867" x="22" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_uuid</text>
+      </g>
+      <g id="svg_799">
+       <text id="svg_800" y="658.13867" x="22" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">order</text>
+      </g>
+      <g id="svg_801">
+       <text id="svg_802" y="672.13867" x="22" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">description</text>
+      </g>
+      <g id="svg_803">
+       <text id="svg_804" y="686.13867" x="22" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">completed_at</text>
+      </g>
+      <g id="svg_805">
+       <text id="svg_806" y="700.13867" x="22" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_807">
+       <text id="svg_808" y="714.13867" x="22" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+     </g>
+     <g id="svg_809">
+      <g id="svg_810">
+       <text id="svg_811" y="630.13867" x="143.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_812">
+       <text id="svg_813" y="644.13867" x="143.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_814">
+       <text id="svg_815" y="658.13867" x="143.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">pos_t</text>
+      </g>
+      <g id="svg_816">
+       <text id="svg_817" y="672.13867" x="143.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(512)</text>
+      </g>
+      <g id="svg_818">
+       <text id="svg_819" y="686.13867" x="143.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_820">
+       <text id="svg_821" y="700.13867" x="143.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_822">
+       <text id="svg_823" y="714.13867" x="143.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_824">
+      <g id="svg_825">
+       <text id="svg_826" y="630.13867" x="238.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_827">
+       <text id="svg_828" y="644.13867" x="238.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_829">
+       <text id="svg_830" y="658.13867" x="238.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_831">
+       <text id="svg_832" y="672.13867" x="238.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_833">
+       <text id="svg_834" y="686.13867" x="238.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_835">
+       <text id="svg_836" y="700.13867" x="238.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_837">
+       <text id="svg_838" y="714.13867" x="238.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_839" stroke="#000000" points="17,616 17,596 257,596 257,616 17,616 17,727 257,727 257,616 " fill="none"/>
+   </g>
+   <g id="svg_840" class="table">
+    <g id="svg_841">
+     <rect id="svg_842" x="379" y="1026" width="259" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_843">
+     <text id="svg_844" y="1040.19062" x="509.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">tag</text>
+    </g>
+    <g id="svg_845">
+     <rect id="svg_846" x="379" y="1046" width="259" height="110" fill="#ffffff"/>
+     <g id="svg_847">
+      <g id="svg_848">
+       <text id="svg_849" y="1060.13867" x="384" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">tag_uuid</text>
+      </g>
+      <g id="svg_850">
+       <text id="svg_851" y="1074.13867" x="384" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">owner_uuid</text>
+      </g>
+      <g id="svg_852">
+       <text id="svg_853" y="1088.13867" x="384" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">name</text>
+      </g>
+      <g id="svg_854">
+       <text id="svg_855" y="1102.13867" x="384" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">description</text>
+      </g>
+      <g id="svg_856">
+       <text id="svg_857" y="1116.13867" x="384" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">color</text>
+      </g>
+      <g id="svg_858">
+       <text id="svg_859" y="1130.13867" x="384" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_860">
+       <text id="svg_861" y="1144.13867" x="384" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+     </g>
+     <g id="svg_862">
+      <g id="svg_863">
+       <text id="svg_864" y="1060.13867" x="524.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_865">
+       <text id="svg_866" y="1074.13867" x="524.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_867">
+       <text id="svg_868" y="1088.13867" x="524.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(50)</text>
+      </g>
+      <g id="svg_869">
+       <text id="svg_870" y="1102.13867" x="524.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(512)</text>
+      </g>
+      <g id="svg_871">
+       <text id="svg_872" y="1116.13867" x="524.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">tag_color_t</text>
+      </g>
+      <g id="svg_873">
+       <text id="svg_874" y="1130.13867" x="524.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_875">
+       <text id="svg_876" y="1144.13867" x="524.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_877">
+      <g id="svg_878">
+       <text id="svg_879" y="1060.13867" x="619.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_880">
+       <text id="svg_881" y="1074.13867" x="619.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_882">
+       <text id="svg_883" y="1088.13867" x="619.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_884">
+       <text id="svg_885" y="1102.13867" x="619.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">N</text>
+      </g>
+      <g id="svg_886">
+       <text id="svg_887" y="1116.13867" x="619.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_888">
+       <text id="svg_889" y="1130.13867" x="619.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_890">
+       <text id="svg_891" y="1144.13867" x="619.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_892" stroke="#000000" points="379,1046 379,1026 638,1026 638,1046 379,1046 379,1156 638,1156 638,1046 " fill="none"/>
+   </g>
+   <g id="svg_893" class="table">
+    <g id="svg_894">
+     <rect id="svg_895" x="380" y="914" width="185" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_896">
+     <text id="svg_897" y="928.19062" x="473.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">task_tag_mapping</text>
+    </g>
+    <g id="svg_898">
+     <rect id="svg_899" x="380" y="934" width="185" height="46" fill="#ffffff"/>
+     <g id="svg_900">
+      <g id="svg_901">
+       <text id="svg_902" y="948.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_uui</text>
+      </g>
+      <g id="svg_903">
+       <text id="svg_904" y="962.13867" x="385" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">tag_uuid</text>
+      </g>
+     </g>
+     <g id="svg_905">
+      <g id="svg_906">
+       <text id="svg_907" y="948.13867" x="498" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_908">
+       <text id="svg_909" y="962.13867" x="498" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+     </g>
+     <g id="svg_910">
+      <g id="svg_911">
+       <text id="svg_912" y="948.13867" x="528.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK FK</text>
+      </g>
+      <g id="svg_913">
+       <text id="svg_914" y="962.13867" x="528.25" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK FK</text>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_915" stroke="#000000" points="380,934 380,914 565,914 565,934 380,934 380,980 565,980 565,934 " fill="none"/>
+   </g>
+   <g id="svg_916" class="table">
+    <g id="svg_917">
+     <rect id="svg_918" x="767" y="203" width="229" height="20" fill="#f0f0f0"/>
+    </g>
+    <g id="svg_919">
+     <text id="svg_920" y="217.19063" x="882.5" text-anchor="middle" font-weight="700" font-size="12" font-family="arial, sans-serif" fill="black">attachment</text>
+    </g>
+    <g id="svg_921">
+     <rect id="svg_922" x="767" y="223" width="229" height="124" fill="#ffffff"/>
+     <g id="svg_923">
+      <g id="svg_924">
+       <text id="svg_925" y="237.13867" x="772" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">attachment_id</text>
+      </g>
+      <g id="svg_926">
+       <text id="svg_927" y="251.13867" x="772" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">owner_uuid</text>
+      </g>
+      <g id="svg_928">
+       <text id="svg_929" y="265.13867" x="772" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">task_uuid</text>
+      </g>
+      <g id="svg_930">
+       <text id="svg_931" y="279.13867" x="772" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">file_name</text>
+      </g>
+      <g id="svg_932">
+       <text id="svg_933" y="293.13867" x="772" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">file_url</text>
+      </g>
+      <g id="svg_934">
+       <text id="svg_935" y="307.13867" x="772" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">created_at</text>
+      </g>
+      <g id="svg_936">
+       <text id="svg_937" y="321.13867" x="772" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">updated_at</text>
+      </g>
+     </g>
+     <g id="svg_938">
+      <g id="svg_939">
+       <text id="svg_940" y="237.13867" x="875" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_941">
+       <text id="svg_942" y="251.13867" x="875" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_943">
+       <text id="svg_944" y="265.13867" x="875" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">uuid</text>
+      </g>
+      <g id="svg_945">
+       <text id="svg_946" y="279.13867" x="875" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(255)</text>
+      </g>
+      <g id="svg_947">
+       <text id="svg_948" y="293.13867" x="875" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">VARCHAR(2048)</text>
+      </g>
+      <g id="svg_949">
+       <text id="svg_950" y="307.13867" x="875" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+      <g id="svg_951">
+       <text id="svg_952" y="321.13867" x="875" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">timestamptz</text>
+      </g>
+     </g>
+     <g id="svg_953">
+      <g id="svg_954">
+       <text id="svg_955" y="237.13867" x="977.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">PK</text>
+      </g>
+      <g id="svg_956">
+       <text id="svg_957" y="251.13867" x="977.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_958">
+       <text id="svg_959" y="265.13867" x="977.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">FK</text>
+      </g>
+      <g id="svg_960">
+       <text id="svg_961" y="279.13867" x="977.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_962">
+       <text id="svg_963" y="293.13867" x="977.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_964">
+       <text id="svg_965" y="307.13867" x="977.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+      <g id="svg_966">
+       <text id="svg_967" y="321.13867" x="977.75" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+      </g>
+     </g>
+    </g>
+    <polyline id="svg_968" stroke="#000000" points="767,223 767,203 996,203 996,223 767,223 767,347 996,347 996,223 " fill="none"/>
+   </g>
+   <g id="svg_969" class="note">
+    <polygon id="svg_970" stroke-linejoin="bevel" stroke="#000000" points="918,43 803,43 803,130 933,130 933,58 918,58 918,43 " fill="#fff9c3"/>
+    <polygon id="svg_971" stroke-linejoin="bevel" stroke="#000000" points="918,43 933,58 918,58 918,43 " fill="#fff9c3"/>
+    <g id="svg_972">
+     <g id="svg_973">
+      <text id="svg_974" y="59.13867" x="809" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">Domain Types:</text>
+     </g>
+     <g id="svg_975">
+      <text id="svg_976" y="73.13867" x="809" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+     </g>
+     <g id="svg_977">
+      <text id="svg_978" y="87.13867" x="809" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">- email_t</text>
+     </g>
+     <g id="svg_979">
+      <text id="svg_980" y="101.13867" x="809" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">- pos_t</text>
+     </g>
+     <g id="svg_981">
+      <text id="svg_982" y="115.13867" x="809" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">- tag_color_t</text>
+     </g>
+    </g>
+   </g>
+   <g id="svg_983" class="note">
+    <polygon id="svg_984" stroke-linejoin="bevel" stroke="#000000" points="160,1048 24,1048 24,1133 175,1133 175,1063 160,1063 160,1048 " fill="#fff9c3"/>
+    <polygon id="svg_985" stroke-linejoin="bevel" stroke="#000000" points="160,1048 175,1063 160,1063 160,1048 " fill="#fff9c3"/>
+    <g id="svg_986">
+     <g id="svg_987">
+      <text id="svg_988" y="1064.13867" x="30" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">Composite Types:</text>
+     </g>
+     <g id="svg_989">
+      <text id="svg_990" y="1078.13867" x="30" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+     </g>
+     <g id="svg_991">
+      <text id="svg_992" y="1092.13867" x="30" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">- task_creation_t</text>
+     </g>
+     <g id="svg_993">
+      <text id="svg_994" y="1106.13867" x="30" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">- task_update_t</text>
+     </g>
+    </g>
+   </g>
+   <g id="svg_995" class="note">
+    <polygon id="svg_996" stroke-linejoin="bevel" stroke="#000000" points="345,1046 193,1046 193,1135 360,1135 360,1061 345,1061 345,1046 " fill="#fff9c3"/>
+    <polygon id="svg_997" stroke-linejoin="bevel" stroke="#000000" points="345,1046 360,1061 345,1061 345,1046 " fill="#fff9c3"/>
+    <g id="svg_998">
+     <g id="svg_999">
+      <text id="svg_1000" y="1062.13867" x="199" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">Enumerated Types:</text>
+     </g>
+     <g id="svg_1001">
+      <text id="svg_1002" y="1076.13867" x="199" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+     </g>
+     <g id="svg_1003">
+      <text id="svg_1004" y="1090.13867" x="199" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">- task_priority_t</text>
+     </g>
+     <g id="svg_1005">
+      <text id="svg_1006" y="1104.13867" x="199" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">- task_status_t</text>
+     </g>
+    </g>
+   </g>
+   <g id="svg_1007" class="note">
+    <polygon id="svg_1008" stroke-linejoin="bevel" stroke="#000000" points="960,1066 807,1066 807,1134 975,1134 975,1081 960,1081 960,1066 " fill="#fff9c3"/>
+    <polygon id="svg_1009" stroke-linejoin="bevel" stroke="#000000" points="960,1066 975,1081 960,1081 960,1066 " fill="#fff9c3"/>
+    <g id="svg_1010">
+     <g id="svg_1011">
+      <text id="svg_1012" y="1082.13867" x="813" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">Enumerated Types:</text>
+     </g>
+     <g id="svg_1013">
+      <text id="svg_1014" y="1096.13867" x="813" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black"/>
+     </g>
+     <g id="svg_1015">
+      <text id="svg_1016" y="1110.13867" x="813" font-weight="400" font-size="12" font-family="arial, sans-serif" fill="black">- special_list_type_t</text>
+     </g>
+    </g>
+   </g>
+   <svg id="svg_1017" y="1205" x="928" width="166" height="40">
+    <svg y="0px" xml:space="preserve" x="0px" viewBox="0 0 487.7 116.5" version="1" id="svg_3" enable-background="new 0 0 487.7 116.5" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <g id="svg_1018">
+      <path id="svg_1019" fill="#222323" d="m146.3,28.6c2.2,-0.3 4.5,-0.5 6.7,-0.5c1.9,0 4,0.2 6.1,0.5l3.8,47l20.6,-47c2,-0.3 4.1,-0.5 6.3,-0.5c2.2,0 4.3,0.2 6.4,0.5l-28.4,59.8c-2.5,0.3 -4.9,0.5 -7.3,0.5c-1.1,0 -2.2,0 -3.2,-0.1c-1.1,-0.1 -2.2,-0.2 -3.5,-0.4l-7.5,-59.8z"/>
+      <path id="svg_1020" fill="#222323" d="m198.6,72.1c0.3,2.7 1.2,4.6 2.7,5.9c1.4,1.3 3.5,2 6.3,2c2.2,0 4.2,-0.2 5.9,-0.7c1.7,-0.5 3.5,-1.1 5.4,-1.9c0.9,1.1 1.5,2.5 1.8,4c0.3,1.6 0.5,3.3 0.5,5c-0.9,0.4 -2,0.8 -3.3,1.2c-1.2,0.4 -2.5,0.7 -3.9,0.9c-1.3,0.2 -2.7,0.4 -4,0.6c-1.3,0.1 -2.5,0.2 -3.6,0.2c-3.4,0 -6.3,-0.4 -8.7,-1.2c-2.4,-0.8 -4.4,-2 -6,-3.5c-1.6,-1.5 -2.7,-3.4 -3.5,-5.6c-0.7,-2.2 -1.1,-4.6 -1.1,-7.3c0,-3.4 0.6,-6.7 1.7,-10c1.2,-3.3 2.8,-6.2 5,-8.8c2.1,-2.6 4.7,-4.7 7.8,-6.2c3.1,-1.6 6.5,-2.4 10.4,-2.4c1.8,0 3.5,0.2 5.1,0.7c1.6,0.4 3,1.1 4.1,2c1.2,0.9 2.1,2 2.7,3.4c0.7,1.3 1,2.9 1,4.7c0,2.5 -0.6,4.7 -1.7,6.5c-1.2,1.8 -2.7,3.4 -4.7,4.7c-1.9,1.3 -4.1,2.3 -6.6,3.1c-2.5,0.8 -5,1.4 -7.7,1.8l-5.6,0.9zm4.7,-8.5c2.1,-0.3 3.8,-0.8 5.2,-1.3c1.3,-0.5 2.4,-1.1 3.2,-1.7c0.8,-0.6 1.3,-1.3 1.6,-2c0.3,-0.7 0.4,-1.3 0.4,-2c0,-1.1 -0.3,-1.9 -1,-2.6c-0.7,-0.7 -1.6,-1 -2.8,-1c-1.4,0 -2.8,0.3 -4,1c-1.2,0.6 -2.2,1.5 -3.1,2.5c-0.9,1.1 -1.7,2.3 -2.3,3.6c-0.6,1.4 -1.1,2.7 -1.5,4.1l4.3,-0.6z"/>
+      <path id="svg_1021" fill="#222323" d="m231.5,63.9c0.6,-3.5 1.1,-6.6 1.4,-9.3c0.3,-2.7 0.5,-4.8 0.5,-6.3c0,-0.6 0,-1.1 0,-1.5s0,-0.9 -0.1,-1.4c1.8,-0.3 3.7,-0.5 5.5,-0.5c0.8,0 1.7,0 2.5,0.1c0.8,0.1 1.7,0.2 2.7,0.4c0.1,0.4 0.2,1 0.3,1.6c0.1,0.6 0.2,1.5 0.2,2.7c0,0.5 0,1 0,1.5c0,0.5 -0.1,1.1 -0.2,1.8c0.6,-1 1.2,-2 2.1,-3c0.8,-1 1.8,-1.8 2.8,-2.6c1,-0.8 2.2,-1.4 3.4,-1.9c1.2,-0.5 2.6,-0.7 4.1,-0.7c1.2,0 2.2,0.1 3,0.4c0.1,0.2 0.1,0.4 0.1,0.7c0,0.2 0,0.5 0,0.7c0,1.6 -0.2,3.2 -0.6,4.8c-0.4,1.7 -0.9,3.1 -1.6,4.2c-0.3,-0.1 -0.7,-0.1 -1.1,-0.2c-0.4,-0.1 -0.9,-0.1 -1.5,-0.1c-2.3,0 -4.1,0.4 -5.6,1.2c-1.5,0.8 -2.7,1.9 -3.6,3.3c-0.9,1.4 -1.7,3.1 -2.2,5.1c-0.6,2 -1.1,4.2 -1.5,6.7l-3.1,16.7c-2.2,0.3 -4.2,0.5 -6.1,0.5c-1.9,0 -3.9,-0.2 -5.7,-0.5l4.3,-24.4z"/>
+      <path id="svg_1022" fill="#222323" d="m269.7,54.4l-6.4,0c0,-1.5 0.1,-3 0.3,-4.4c0.2,-1.4 0.6,-3 1.2,-4.6l6.4,0l0.5,-2.5c0.3,-1.4 0.4,-2.7 0.5,-4c0.1,-1.2 0.1,-2.3 0.1,-3.1c1.4,-0.9 3.2,-1.6 5.4,-2c2.2,-0.4 4.2,-0.6 6,-0.6c0.3,0.8 0.4,1.9 0.4,3.2c0,0.9 -0.1,1.8 -0.2,2.9c-0.1,1 -0.3,2.2 -0.5,3.4l-0.5,2.7l10.3,0c0,1.7 -0.1,3.2 -0.4,4.6c-0.3,1.4 -0.7,2.9 -1.2,4.4l-10.3,0l-2.9,16.4c-0.1,0.8 -0.2,1.5 -0.3,2.2c-0.1,0.7 -0.1,1.3 -0.1,1.9c0,1.4 0.3,2.6 1,3.4c0.7,0.8 1.9,1.2 3.7,1.2c0.9,0 1.8,-0.1 2.5,-0.2c0.7,-0.1 1.4,-0.3 2,-0.5c0.7,1.6 1.1,3.7 1.1,6.3c0,0.4 0,0.9 0,1.3c0,0.4 0,0.9 -0.1,1.3c-2.4,0.7 -5.2,1.1 -8.6,1.1c-4.7,0 -8.1,-0.9 -10.4,-2.6c-2.2,-1.7 -3.4,-4.6 -3.4,-8.7c0,-0.8 0.1,-1.7 0.2,-2.6c0.1,-0.9 0.2,-1.9 0.4,-2.9l3.3,-17.6z"/>
+      <path id="svg_1023" fill="#222323" d="m331.9,69.8c-0.6,3.5 -1.1,6.6 -1.3,9.3c-0.3,2.7 -0.4,4.8 -0.4,6.3c0,0.6 0,1.1 0,1.5s0,0.9 0.1,1.4c-1.8,0.3 -3.6,0.5 -5.4,0.5c-1.6,0 -3.3,-0.2 -5.2,-0.5c-0.1,-0.4 -0.2,-1 -0.3,-1.6c-0.1,-0.6 -0.2,-1.5 -0.2,-2.7c0,-0.5 0,-1 0,-1.6c0,-0.6 0.1,-1.2 0.2,-1.9c-1.6,2.6 -3.7,4.7 -6.2,6.4c-2.5,1.7 -5.4,2.6 -8.7,2.6c-3.7,0 -6.4,-1.2 -8.2,-3.5c-1.8,-2.3 -2.7,-5.4 -2.7,-9.2c0,-4.2 0.6,-8.2 1.9,-12.1c1.2,-3.9 3.1,-7.3 5.6,-10.3c2.5,-3 5.5,-5.4 9.2,-7.2c3.7,-1.8 7.9,-2.7 12.8,-2.7c2.4,0 4.7,0.2 6.8,0.5c2.1,0.3 4.2,0.8 6.2,1.4l-4.2,23.4zm-8.6,-15.5c-0.5,-0.1 -1,-0.2 -1.5,-0.2c-0.5,0 -0.9,0 -1.4,0c-2.7,0 -4.9,0.7 -6.8,2c-1.9,1.3 -3.4,3 -4.6,5c-1.2,2 -2.1,4.1 -2.7,6.4c-0.6,2.3 -0.8,4.4 -0.8,6.3c0,4.1 1.4,6.2 4.1,6.2c2.7,0 5.1,-1.6 7.4,-4.9c2.3,-3.2 3.9,-7.8 5,-13.7l1.3,-7.1z"/>
+      <path id="svg_1024" fill="#222323" d="m344.9,43.7c1,-5.8 1.5,-10.2 1.5,-13.2c0,-0.6 0,-1.1 0,-1.5c0,-0.4 -0.1,-0.9 -0.1,-1.4c0.9,-0.2 2,-0.3 3.2,-0.4c1.2,-0.1 2.3,-0.1 3.2,-0.1c1.6,0 3.4,0.2 5.3,0.5c0.3,0.8 0.4,1.9 0.4,3.2c0,2.4 -0.3,5.4 -1,8.9l-2.1,11.6c0.7,-0.8 1.4,-1.7 2.2,-2.5c0.8,-0.8 1.7,-1.5 2.8,-2.2c1.1,-0.7 2.3,-1.2 3.7,-1.6c1.4,-0.4 3,-0.6 4.8,-0.6c3.9,0 6.9,1.3 8.9,4c2.1,2.7 3.1,6.5 3.1,11.6c0,3.4 -0.5,6.9 -1.5,10.4c-1,3.5 -2.7,6.7 -5,9.5c-2.4,2.8 -5.5,5.1 -9.4,6.9c-3.9,1.8 -8.7,2.7 -14.4,2.7c-2.6,0 -5,-0.2 -7.2,-0.7c-2.2,-0.4 -4.2,-1.1 -6.2,-1.8l7.8,-43.3zm5.5,35.4c0.4,0.2 1,0.3 1.7,0.4c0.7,0.1 1.4,0.1 2.1,0.1c2.4,0 4.5,-0.6 6.3,-1.7c1.7,-1.1 3.2,-2.6 4.3,-4.3c1.1,-1.7 2,-3.7 2.5,-5.8c0.5,-2.1 0.8,-4.2 0.8,-6.2c0,-1.9 -0.4,-3.6 -1.2,-5c-0.8,-1.4 -2.2,-2.1 -4.1,-2.1c-2.6,0 -4.7,1.1 -6.6,3.2c-1.8,2.2 -3.2,5.7 -4,10.7l-1.8,10.7z"/>
+      <path id="svg_1025" fill="#222323" d="m395.7,72.1c0.3,2.7 1.2,4.6 2.7,5.9c1.4,1.3 3.5,2 6.3,2c2.2,0 4.2,-0.2 5.9,-0.7c1.7,-0.5 3.5,-1.1 5.4,-1.9c0.9,1.1 1.5,2.5 1.8,4c0.3,1.6 0.5,3.3 0.5,5c-0.9,0.4 -2,0.8 -3.3,1.2c-1.2,0.4 -2.5,0.7 -3.9,0.9c-1.3,0.2 -2.7,0.4 -4,0.6c-1.3,0.1 -2.5,0.2 -3.6,0.2c-3.4,0 -6.3,-0.4 -8.7,-1.2c-2.4,-0.8 -4.4,-2 -6,-3.5c-1.6,-1.5 -2.7,-3.4 -3.5,-5.6c-0.7,-2.2 -1.1,-4.6 -1.1,-7.3c0,-3.4 0.6,-6.7 1.7,-10c1.2,-3.3 2.8,-6.2 5,-8.8c2.1,-2.6 4.7,-4.7 7.8,-6.2c3.1,-1.6 6.5,-2.4 10.4,-2.4c1.8,0 3.5,0.2 5.1,0.7c1.6,0.4 3,1.1 4.1,2c1.2,0.9 2.1,2 2.7,3.4c0.7,1.3 1,2.9 1,4.7c0,2.5 -0.6,4.7 -1.7,6.5c-1.2,1.8 -2.7,3.4 -4.7,4.7c-1.9,1.3 -4.1,2.3 -6.6,3.1c-2.5,0.8 -5,1.4 -7.7,1.8l-5.6,0.9zm4.8,-8.5c2.1,-0.3 3.8,-0.8 5.2,-1.3c1.3,-0.5 2.4,-1.1 3.2,-1.7c0.8,-0.6 1.3,-1.3 1.6,-2c0.3,-0.7 0.4,-1.3 0.4,-2c0,-1.1 -0.3,-1.9 -1,-2.6c-0.7,-0.7 -1.6,-1 -2.8,-1c-1.4,0 -2.8,0.3 -4,1c-1.2,0.6 -2.2,1.5 -3.1,2.5c-0.9,1.1 -1.7,2.3 -2.3,3.6c-0.6,1.4 -1.1,2.7 -1.5,4.1l4.3,-0.6z"/>
+      <path id="svg_1026" fill="#222323" d="m430.8,43.7c0.6,-2.9 1,-5.5 1.3,-7.7c0.2,-2.2 0.4,-4 0.4,-5.5c0,-0.6 0,-1.1 0,-1.5c0,-0.4 -0.1,-0.9 -0.1,-1.4c0.9,-0.2 2,-0.3 3.2,-0.4c1.2,-0.1 2.3,-0.1 3.2,-0.1c1.6,0 3.4,0.2 5.3,0.5c0.3,0.8 0.4,1.9 0.4,3.2c0,1.2 -0.1,2.5 -0.3,4c-0.2,1.5 -0.5,3.1 -0.8,4.9l-6.4,33.5c-0.2,0.9 -0.2,1.7 -0.2,2.3c0,0.9 0.1,1.6 0.4,2.1s0.6,0.9 1,1.2c0.4,0.3 0.8,0.5 1.3,0.5c0.5,0.1 1,0.1 1.5,0.1c0.2,0 0.6,0 1.2,-0.1c0.6,-0.1 1.2,-0.2 1.7,-0.4c0.3,0.9 0.5,2 0.7,3.1c0.2,1.1 0.3,2.2 0.3,3.4c0,0.4 0,0.9 0,1.2c0,0.4 -0.1,0.8 -0.1,1.2c-0.8,0.3 -1.9,0.6 -3.2,0.8c-1.3,0.2 -2.8,0.3 -4.4,0.3c-3.8,0 -6.7,-0.9 -8.9,-2.8c-2.2,-1.9 -3.2,-4.8 -3.2,-8.8c0,-0.8 0.1,-1.6 0.2,-2.5c0.1,-0.9 0.2,-1.8 0.4,-2.7l5.1,-28.4z"/>
+      <path id="svg_1027" fill="#222323" d="m463.5,89.4c-5.7,0 -9.9,-1.5 -12.6,-4.5c-2.7,-3 -4,-7.1 -4,-12.3c0,-3.3 0.5,-6.7 1.5,-10c1,-3.4 2.5,-6.4 4.5,-9.1c2,-2.7 4.5,-4.9 7.5,-6.6c3,-1.7 6.6,-2.5 10.6,-2.5c5.8,0 10,1.5 12.7,4.6c2.7,3.1 4,7.2 4,12.4c0,3.4 -0.5,6.8 -1.5,10.2c-1,3.3 -2.5,6.3 -4.5,9c-2,2.7 -4.5,4.8 -7.6,6.4c-2.9,1.6 -6.5,2.4 -10.6,2.4zm1.1,-9c2.1,0 3.9,-0.7 5.3,-2c1.4,-1.3 2.6,-3 3.5,-5c0.9,-2 1.6,-4 2,-6.2c0.4,-2.2 0.6,-4.2 0.6,-5.9c0,-5.1 -2.1,-7.7 -6.2,-7.7c-2.1,0 -3.9,0.7 -5.2,2.1c-1.4,1.4 -2.5,3.1 -3.4,5.1c-0.9,2 -1.5,4.1 -1.9,6.3c-0.4,2.2 -0.5,4.2 -0.5,5.9c-0.1,4.9 1.9,7.4 5.8,7.4z"/>
+     </g>
+     <g id="svg_1028">
+      <polygon id="svg_1029" points="16.6,38.9 31,61.4 31,61.4 47.1,42.1 32.1,20.3  " fill="#D15197"/>
+      <path id="svg_1030" fill="#D15197" d="m12.6,32.7c0.9,-1.1 8.4,-10.1 15.4,-18.3l-10,-14.4l-7.2,0l-10.8,13l12.6,19.7z"/>
+      <path id="svg_1031" fill="#D15197" d="m34.9,67.5l16,25c0.9,-1.1 7.8,-9.3 17,-20.3l-16.7,-24.2l-16.3,19.5z"/>
+      <polygon id="svg_1032" points="72.1,78.1 54.9,98.7 54.9,98.6 66.4,116.5 81.9,92.2  " fill="#D15197"/>
+      <path id="svg_1033" fill="#5D2F87" d="m69.5,26.1l-18.2,21.9l0,0l16.7,24.2c0,0 0,0 0,0c5.5,-6.6 11.9,-14.2 18.3,-21.9l-16.8,-24.2z"/>
+      <polygon id="svg_1034" points="90.4,56.2 72.1,78.1 72.1,78.1 81.9,92.2 81.9,92.2 97.9,67.1  " fill="#5D2F87"/>
+      <polygon id="svg_1035" points="51.4,0 49,0 32.1,20.3 32.1,20.3 47.1,42.1 47.2,42 65.4,20.2  " fill="#5D2F87"/>
+      <path id="svg_1036" fill="#5D2F87" d="m18.1,0l0,0l9.9,14.4c0,0 0,0 0,-0.1c6.2,-7.4 12,-14.3 12,-14.3l-21.9,0z"/>
+      <polygon id="svg_1037" points="51.5,0 51.4,0 65.4,20.2 65.4,20.2 82.3,0  " fill="#25B6EA"/>
+      <path id="svg_1038" fill="#25B6EA" d="m88.5,3.4l-19,22.7l0,0l16.7,24.1c0,0 0,0 0,0c6.5,-7.8 13.1,-15.7 19,-22.7l-16.7,-24.1z"/>
+      <polygon id="svg_1039" points="109.4,33.4 90.4,56.2 90.4,56.2 97.9,67.1 97.9,67.1 114.6,41  " fill="#25B6EA"/>
+      <path id="svg_1040" fill="#93C149" d="m121.8,0l-30.5,0l-2.7,3.3l-0.1,0.1l16.8,24.1c0,0 0.1,-0.1 0.1,-0.1c11.1,-13.4 19.6,-23.5 19.6,-23.5l-3.2,-3.9z"/>
+      <polygon id="svg_1041" points="129.5,9.3 109.5,33.3 109.4,33.4 114.6,41 114.7,40.9 132.5,13  " fill="#93C149"/>
+     </g>
+    </svg>
+   </svg>
+  </g>
+ </g>
+</svg>
