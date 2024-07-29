@@ -13,7 +13,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Curabitur at ipsum ac tellus semper interdum.', 'Vestibulum rutrum rutrum neque.', 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'medium', 'decayed', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Pellentesque at nulla.', 'Maecenas tristique, est et tempus semper.', 'Integer tincidunt ante vel ipsum.', 'medium', 'complete', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Nulla suscipit ligula in lacus.', 'Mauris lacinia sapien quis libero.', 'Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 'medium', 'decayed', true),
@@ -35,7 +35,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', 'Sed ante.', 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.', 'high', 'decayed', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Pellentesque viverra pede ac diam.', 'In est risus, auctor sed, tristique in, tempus sit amet, sem.', 'Morbi a ipsum. Integer a nibh. In quis justo.', 'low', 'decayed', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Maecenas ut massa quis augue luctus tincidunt.', 'Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'Duis bibendum.', 'low', 'decayed', true),
@@ -57,7 +57,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Nullam varius.', 'Proin interdum mauris non ligula pellentesque ultrices.', 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.', 'medium', 'complete', true),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Vestibulum.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.', 'high', 'decayed', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Nulla ac enim.', 'In hac habitasse platea dictumst.', 'Sed sagittis.', 'medium', 'complete', false),
@@ -79,7 +79,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Donec quis orci eget orci vehicula condimentum.', 'Vivamus tortor.', 'Duis bibendum.', 'low', 'complete', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Pellentesque eget nunc.', 'Donec vitae nisi.', 'Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.', 'medium', 'decayed', true),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Duis bibendum, felis sed interdum venenatis.', 'Etiam justo.', 'Ut tellus. Nulla ut erat id mauris vulputate elementum.', 'low', 'complete', false),
@@ -101,7 +101,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Curabitur in libero ut massa volutpat convallis.', 'Nunc rhoncus dui vel sem.', 'Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'medium', 'complete', true),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Praesent blandit.', 'Etiam pretium iaculis justo.', 'Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'medium', 'decayed', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 'Quisque ut erat.', 'Quisque ut erat.', 'high', 'incomplete', false),
@@ -124,7 +124,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Quisque ut erat.', 'Integer a nibh.', 'Curabitur in libero ut massa volutpat convallis.', 'high', 'decayed', true),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'In sagittis dui vel nisl.', 'Nam nulla.', 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.', 'low', 'decayed', true),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Morbi vestibulum, velit id pretium iaculis.', 'Nulla nisl.', 'Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius.', 'high', 'complete', true),
@@ -146,7 +146,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'tomorrow@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Nunc nisl.', 'In hac habitasse platea dictumst.', 'Donec posuere metus vitae ipsum. Aliquam non mauris.', 'low', 'decayed', true),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Sed sagittis.', 'Integer non velit.', 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'high', 'decayed', true),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Nulla mollis molestie lorem.', 'Morbi quis tortor id nulla ultrices aliquet.', 'Praesent id massa id nisl venenatis lacinia.', 'medium', 'incomplete', true),
@@ -168,7 +168,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Donec quis orci eget orci vehicula condimentum.', 'Quisque porta volutpat erat.', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 'high', 'incomplete', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Vestibulum sed magna at nunc commodo placerat.', 'Sed sagittis.', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 'medium', 'complete', true),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Vestibulum ante ipsum primis in faucibus.', 'Duis ac nibh.', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 'high', 'incomplete', false),
@@ -196,7 +196,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Duis ac nibh.', 'Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque.', 'high', 'incomplete', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Duis bibendum, felis sed.', 'Maecenas ut massa quis augue luctus tincidunt.', 'Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', 'medium', 'complete', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Mauris sit amet eros.', 'Mauris sit amet eros.', 'Aenean sit amet justo.', 'low', 'incomplete', false),
@@ -225,7 +225,7 @@
 --      WHERE "owner_uuid" = (SELECT * FROM "target_user")
 --        AND     "name" = 'today@' || "owner_uuid"
 --   )
---   INSERT INTO "task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
+--   INSERT INTO "tasks"."task" ("owner_uuid", "list_uuid", "position_in_list", "title", "headline", "description", "priority", "status", "is_pinned")
 --        VALUES ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 1, 'Pellentesque ultrices mattis odio.', 'Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem.', 'low', 'decayed', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 2, 'Nunc purus.', 'Morbi quis tortor id nulla ultrices aliquet.', 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 'high', 'decayed', false),
 --               ((SELECT * FROM "target_user"), (SELECT * FROM "target_list"), 3, 'Vestibulum quam sapien.', 'Nunc rhoncus dui vel sem.', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'high', 'complete', false),

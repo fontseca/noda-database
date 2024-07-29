@@ -1,24 +1,21 @@
-CREATE TABLE IF NOT EXISTS "task"
+CREATE TABLE IF NOT EXISTS "tasks"."task"
 (
-  "task_id"          UUID PRIMARY KEY NOT NULL DEFAULT uuid_generate_v4 (),
-  "owner_uuid"         UUID NOT NULL REFERENCES"users"."user" ("user_uuid"),
-  "list_uuid"          UUID NOT NULL REFERENCES "lists"."list" ("list_uuid") ON DELETE CASCADE,
-  "position_in_list" pos_t NOT NULL,
-  "title"            VARCHAR(128) NOT NULL,
-  "headline"         VARCHAR(64) DEFAULT NULL,
-  "description"      VARCHAR(512) DEFAULT NULL,
-  "priority"         task_priority_t NOT NULL,
-  "status"           task_status_t NOT NULL,
-  "is_pinned"        BOOLEAN NOT NULL DEFAULT FALSE,
-  "due_date"         TIMESTAMPTZ DEFAULT NULL,
-  "remind_at"        TIMESTAMPTZ DEFAULT NULL,
-  "completed_at"     TIMESTAMPTZ DEFAULT NULL,
-  "created_at"       TIMESTAMPTZ NOT NULL DEFAULT now (),
-  "updated_at"       TIMESTAMPTZ NOT NULL DEFAULT now ()
+  "task_id"          uuid PRIMARY KEY          NOT NULL DEFAULT "addons"."uuid_generate_v4"(),
+  "owner_uuid"       uuid                      NOT NULL REFERENCES "users"."user" ("user_uuid"),
+  "list_uuid"        uuid                      NOT NULL REFERENCES "lists"."list" ("list_uuid") ON DELETE CASCADE,
+  "position_in_list" "common"."pos_t"          NOT NULL,
+  "title"            VARCHAR(128)              NOT NULL,
+  "headline"         VARCHAR(64)                        DEFAULT NULL,
+  "description"      VARCHAR(512)                       DEFAULT NULL,
+  "priority"         "tasks"."task_priority_t" NOT NULL,
+  "status"           "tasks"."task_status_t"   NOT NULL,
+  "is_pinned"        BOOLEAN                   NOT NULL DEFAULT FALSE,
+  "due_date"         timestamptz                        DEFAULT NULL,
+  "remind_at"        timestamptz                        DEFAULT NULL,
+  "completed_at"     timestamptz                        DEFAULT NULL,
+  "created_at"       timestamptz               NOT NULL DEFAULT current_timestamp,
+  "updated_at"       timestamptz               NOT NULL DEFAULT current_timestamp
 );
 
-ALTER TABLE "task"
-   OWNER TO "noda";
-
-COMMENT ON TABLE "task"
-              IS 'Manages individual functions, including titles, descriptions, statuses, etc.';
+COMMENT ON TABLE "tasks"."task"
+  IS 'Manages individual functions, including titles, descriptions, statuses, etc.';

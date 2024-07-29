@@ -1,62 +1,57 @@
-CREATE OR REPLACE FUNCTION make_task
-(
-  IN p_owner_id      "users"."user"."user_uuid"%TYPE,
-  IN p_list_id       "task"."list_uuid"%TYPE,
-  IN p_task_creation task_creation_t
+CREATE OR REPLACE FUNCTION "tasks"."make_task"(
+  IN "p_owner_id" "users"."user"."user_uuid"%TYPE,
+  IN "p_list_id" "tasks"."task"."list_uuid"%TYPE,
+  IN "p_task_creation" "tasks"."task_creation_t"
 )
-RETURNS "task"."task_id"%TYPE
-LANGUAGE 'plpgsql'
-AS $$
+  RETURNS "tasks"."task"."task_id"%TYPE
+  LANGUAGE 'plpgsql'
+AS
+$$
 DECLARE
-  inserted_id "task"."task_id"%TYPE;
-  actual_list_id "task"."task_id"%TYPE := p_list_id;
-  n_similar_titles INT := 0;
-  actual_list_title "task"."title"%TYPE := p_task_creation."title";
+  "inserted_id"       "tasks"."task"."task_id"%TYPE;
+  "actual_list_id"    "tasks"."task"."task_id"%TYPE := "p_list_id";
+  "n_similar_titles"  INT                           := 0;
+  "actual_list_title" "tasks"."task"."title"%TYPE   := "p_task_creation"."title";
 BEGIN
-  CALL users.assert_exists (p_owner_id);
-  IF actual_list_id IS NOT NULL THEN
-    CALL "lists"."assert_exists" (p_owner_id, NULL, actual_list_id);
+  CALL "users"."assert_exists"("p_owner_id");
+  IF "actual_list_id" IS NOT NULL THEN
+    CALL "lists"."assert_exists"("p_owner_id", NULL, "actual_list_id");
   ELSE
-    actual_list_id := "lists"." get_today_list_id"(p_owner_id);
-    IF actual_list_id IS NULL THEN
-      actual_list_id := make_today_list (p_owner_id);
+    "actual_list_id" := "lists"."get_today_list_id"("p_owner_id");
+    IF "actual_list_id" IS NULL THEN
+      "actual_list_id" := "lists"."make_today_list"("p_owner_id");
     END IF;
   END IF;
-  SELECT count (*)
-    INTO n_similar_titles
-    FROM "task" t
-   WHERE "list_uuid" = p_list_id AND
-         regexp_count (t."title", '^' || quote_meta (actual_list_title) || '(?: \(\d+\))?$') = 1;
-  IF n_similar_titles > 0 THEN
-    actual_list_title := concat (actual_list_title, ' ' , '(', n_similar_titles, ')');
+  SELECT count(*)
+  INTO "n_similar_titles"
+  FROM "tasks"."task" "t"
+  WHERE "list_uuid" = "p_list_id"
+    AND regexp_count("t"."title", '^' || "common"."quote_meta"("actual_list_title") || '(?: \(\d+\))?$') = 1;
+  IF "n_similar_titles" > 0 THEN
+    "actual_list_title" := concat("actual_list_title", ' ', '(', "n_similar_titles", ')');
   END IF;
-  INSERT INTO "task" ("owner_uuid",
-                      "list_uuid",
-                      "position_in_list",
-                      "title",
-                      "headline",
-                      "description",
-                      "priority",
-                      "status",
-                      "due_date",
-                      "remind_at")
-       VALUES (p_owner_id,
-               actual_list_id,
-               compute_next_task_pos (p_list_id),
-               actual_list_title,
-               NULLIF (p_task_creation."headline", ''),
-               NULLIF (p_task_creation."description", ''),
-               COALESCE (p_task_creation."priority", 'normal'::task_priority_t),
-               COALESCE (p_task_creation."status", 'in progress'::task_status_t),
-               p_task_creation."due_date",
-               p_task_creation."remind_at")
-    RETURNING "task_id"
-         INTO inserted_id;
-  RETURN inserted_id;
+  INSERT INTO "tasks"."task" ("owner_uuid",
+                              "list_uuid",
+                              "position_in_list",
+                              "title",
+                              "headline",
+                              "description",
+                              "priority",
+                              "status",
+                              "due_date",
+                              "remind_at")
+  VALUES ("p_owner_id",
+          "actual_list_id",
+          "tasks"."compute_next_task_pos"("p_list_id"),
+          "actual_list_title",
+          nullif("p_task_creation"."headline", ''),
+          nullif("p_task_creation"."description", ''),
+          coalesce("p_task_creation"."priority", 'normal'::"tasks"."task_priority_t"),
+          coalesce("p_task_creation"."status", 'in progress'::"tasks"."task_status_t"),
+          "p_task_creation"."due_date",
+          "p_task_creation"."remind_at")
+  RETURNING "task_id"
+    INTO "inserted_id";
+  RETURN "inserted_id";
 END;
 $$;
-
-ALTER FUNCTION make_task ("users"."user"."user_uuid"%TYPE,
-                          "task"."list_uuid"%TYPE,
-                          task_creation_t)
-      OWNER TO "noda";

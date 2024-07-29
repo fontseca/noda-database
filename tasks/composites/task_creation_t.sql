@@ -1,18 +1,15 @@
-DROP TYPE IF EXISTS "task_creation_t";
+DROP TYPE IF EXISTS "tasks"."task_creation_t";
 
-CREATE TYPE "task_creation_t" AS
+CREATE TYPE "tasks"."task_creation_t" AS
 (
   "title"       VARCHAR(128),
   "headline"    VARCHAR(64),
   "description" VARCHAR(512),
-  "priority"    task_priority_t,
-  "status"      task_status_t,
-  "due_date"    TIMESTAMPTZ,
-  "remind_at"   TIMESTAMPTZ
+  "priority"    "tasks"."task_priority_t",
+  "status"      "tasks"."task_status_t",
+  "due_date"    timestamptz,
+  "remind_at"   timestamptz
 );
 
-ALTER TYPE "task_creation_t"
-  OWNER TO "noda";
-
-COMMENT ON TYPE "task_creation_t"
-             IS 'Represents the specifications for creating a new task.';
+COMMENT ON TYPE "tasks"."task_creation_t"
+  IS 'Represents the specifications for creating a new task.';
