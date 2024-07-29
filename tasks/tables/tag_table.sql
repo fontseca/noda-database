@@ -1,16 +1,13 @@
-CREATE TABLE IF NOT EXISTS "tag"
+CREATE TABLE IF NOT EXISTS "tasks"."tag"
 (
-  "tag_id"      UUID NOT NULL PRIMARY KEY DEFAULT uuid_generate_v4 (),
-  "owner_uuid"    UUID NOT NULL REFERENCES"users"."user" ("user_uuid"),
-  "name"        VARCHAR(50) NOT NULL UNIQUE,
-  "description" VARCHAR(512) DEFAULT NULL,
-  "color"       tag_color_t NOT NULL DEFAULT 'fff',
-  "created_at"  TIMESTAMPTZ NOT NULL DEFAULT now (),
-  "updated_at"  TIMESTAMPTZ NOT NULL DEFAULT now ()
+  "tag_uuid"    uuid                   NOT NULL PRIMARY KEY DEFAULT "addons"."uuid_generate_v4"(),
+  "owner_uuid"  uuid                   NOT NULL REFERENCES "users"."user" ("user_uuid"),
+  "name"        VARCHAR(50)            NOT NULL UNIQUE,
+  "description" VARCHAR(512)                                DEFAULT NULL,
+  "color"       "common"."tag_color_t" NOT NULL             DEFAULT 'FFF',
+  "created_at"  timestamptz            NOT NULL             DEFAULT current_timestamp,
+  "updated_at"  timestamptz            NOT NULL             DEFAULT current_timestamp
 );
 
-ALTER TABLE "tag"
-   OWNER TO "noda";
-
-COMMENT ON TABLE "tag"
-              IS 'Labels and categorizes enhance organization and searchability.';
+COMMENT ON TABLE "tasks"."tag"
+  IS 'labels and categorizes enhance organization and searchability';
