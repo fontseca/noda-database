@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION "lists"."update"(
   IN "p_owner_id" "lists"."list"."owner_uuid"%TYPE,
-  IN "p_group_id" "lists"."list"."group_uuid"%TYPE,
-  IN "p_list_id" "lists"."list"."list_uuid"%TYPE,
+  IN "p_group_uuid" "lists"."list"."group_uuid"%TYPE,
+  IN "p_list_uuid" "lists"."list"."list_uuid"%TYPE,
   IN "p_l_name" "lists"."list"."name"%TYPE,
   IN "p_l_desc" "lists"."list"."description"%TYPE
 )
@@ -13,11 +13,11 @@ DECLARE
   "n_affected_rows"            INT;
   "old_l_name"                 "lists"."list"."name"%TYPE;
   "old_l_desc"                 "lists"."list"."description"%TYPE;
-  "is_scattered_list" CONSTANT BOOLEAN := "p_group_id" IS NULL;
+  "is_scattered_list" CONSTANT BOOLEAN := "p_group_uuid" IS NULL;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_is_not_special_list"("p_owner_id", "p_list_id");
-  CALL "lists"."assert_exists"("p_owner_id", "p_group_id", "p_list_id");
+  CALL "lists"."assert_is_not_special_list"("p_owner_id", "p_list_uuid");
+  CALL "lists"."assert_exists"("p_owner_id", "p_group_uuid", "p_list_uuid");
   SELECT "l"."name",
          "l"."description"
   INTO "old_l_name",
@@ -27,9 +27,9 @@ BEGIN
     AND CASE
           WHEN "is_scattered_list"
             THEN TRUE
-          ELSE "group_uuid" = "p_group_id"
+          ELSE "group_uuid" = "p_group_uuid"
     END
-    AND "l"."list_uuid" = "p_list_id";
+    AND "l"."list_uuid" = "p_list_uuid";
   "p_l_name" := nullif(trim(BOTH ' ' FROM "p_l_name"), '');
   "p_l_desc" := trim(BOTH ' ' FROM "p_l_desc");
   IF ("p_l_name" IS NULL OR "old_l_name" = "p_l_name") AND
@@ -45,9 +45,9 @@ BEGIN
     AND CASE
           WHEN "is_scattered_list"
             THEN "group_uuid" IS NULL
-          ELSE "group_uuid" = "p_group_id"
+          ELSE "group_uuid" = "p_group_uuid"
     END
-    AND "list_uuid" = "p_list_id";
+    AND "list_uuid" = "p_list_uuid";
   GET DIAGNOSTICS "n_affected_rows" = ROW_COUNT;
   RETURN "n_affected_rows";
 END;

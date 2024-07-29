@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION "tasks"."fetch_tasks"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
-  IN "p_list_id" "tasks"."task"."list_uuid"%TYPE,
+  IN "p_list_uuid" "tasks"."task"."list_uuid"%TYPE,
   IN "p_page" BIGINT,
   IN "p_rpp" BIGINT,
   IN "p_needle" TEXT,
@@ -13,7 +13,7 @@ AS
 $$
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_id");
+  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
   CALL "common"."validate_rpp_and_page"("p_rpp", "p_page");
   CALL "common"."gen_search_pattern"("p_needle");
   CALL "common"."validate_sort_expr"("p_sort_expr");
@@ -21,7 +21,7 @@ BEGIN
     SELECT *
     FROM "tasks"."task" "t"
     WHERE "t"."owner_uuid" = "p_owner_id"
-      AND "t"."list_uuid" = "p_list_id"
+      AND "t"."list_uuid" = "p_list_uuid"
       AND lower(concat("t"."title", '',
                        "t"."headline", '',
                        "t"."description")) ~ "p_needle"

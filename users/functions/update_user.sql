@@ -1,5 +1,5 @@
 CREATE OR REPLACE FUNCTION "users"."update"(
-  IN "p_user_id" "users"."user"."user_uuid"%TYPE,
+  IN "p_user_uuid" "users"."user"."user_uuid"%TYPE,
   IN "p_first_name" "users"."user"."first_name"%TYPE,
   IN "p_middle_name" "users"."user"."middle_name"%TYPE,
   IN "p_last_name" "users"."user"."last_name"%TYPE,
@@ -23,7 +23,7 @@ DECLARE
   "old_picture_url" "users"."user"."picture_url"%TYPE;
   "old_password"    "users"."user"."password"%TYPE;
 BEGIN
-  CALL "users"."assert_exists"("p_user_id");
+  CALL "users"."assert_exists"("p_user_uuid");
   SELECT "u"."first_name",
          "u"."middle_name",
          "u"."last_name",
@@ -39,7 +39,7 @@ BEGIN
     "old_picture_url",
     "old_password"
   FROM "users"."user" "u"
-  WHERE "u"."user_uuid" = "p_user_id";
+  WHERE "u"."user_uuid" = "p_user_uuid";
   IF ("old_first_name" = "p_first_name" OR "p_first_name" = '' OR "p_first_name" IS NULL) AND
      ("old_middle_name" = "p_middle_name" OR "p_middle_name" = '' OR "p_middle_name" IS NULL) AND
      ("old_last_name" = "p_last_name" OR "p_last_name" = '' OR "p_last_name" IS NULL) AND
@@ -59,7 +59,7 @@ BEGIN
       "picture_url" = coalesce(nullif(trim("p_picture_url"), ''), "old_picture_url"),
       "password"    = coalesce(nullif(trim("p_password"), ''), "old_password"),
       "updated_at"  = current_timestamp
-  WHERE "users"."user"."user_uuid" = "p_user_id";
+  WHERE "users"."user"."user_uuid" = "p_user_uuid";
   GET DIAGNOSTICS "rows_affected" = ROW_COUNT;
   RETURN "rows_affected";
 END;

@@ -10,28 +10,28 @@ CREATE OR REPLACE FUNCTION "lists"."fetch"(
 AS
 $$
 DECLARE
-  "today_list_id"    "lists"."list"."list_uuid"%TYPE;
-  "tomorrow_list_id" "lists"."list"."list_uuid"%TYPE;
+  "today_list_uuid"    "lists"."list"."list_uuid"%TYPE;
+  "tomorrow_list_uuid" "lists"."list"."list_uuid"%TYPE;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
   CALL "common"."validate_rpp_and_page"("p_rpp", "p_page");
   CALL "common"."gen_search_pattern"("p_needle");
   CALL "common"."validate_sort_expr"("p_sort_expr");
-  "today_list_id" := "lists"."get_today_list_id"("p_owner_id");
-  "tomorrow_list_id" := "lists"."get_tomorrow_list_id"("p_owner_id");
+  "today_list_uuid" := "lists"."get_today_list_uuid"("p_owner_id");
+  "tomorrow_list_uuid" := "lists"."get_tomorrow_list_uuid"("p_owner_id");
   RETURN QUERY
     SELECT *
     FROM "lists"."list" "l"
     WHERE "l"."owner_uuid" = "p_owner_id"
       AND CASE
-            WHEN "today_list_id" IS NULL
+            WHEN "today_list_uuid" IS NULL
               THEN TRUE
-            ELSE "l"."list_uuid" <> "today_list_id"
+            ELSE "l"."list_uuid" <> "today_list_uuid"
       END
       AND CASE
-            WHEN "tomorrow_list_id" IS NULL
+            WHEN "tomorrow_list_uuid" IS NULL
               THEN TRUE
-            ELSE "l"."list_uuid" <> "tomorrow_list_id"
+            ELSE "l"."list_uuid" <> "tomorrow_list_uuid"
       END
       AND lower(concat("l"."name", ' ', "l"."description")) ~ "p_needle"
       ORDER BY (CASE WHEN "p_sort_expr" = '' THEN "l"."created_at" END) DESC,

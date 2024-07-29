@@ -12,7 +12,7 @@ BEGIN
   ELSE
     "p_column" := lower(trim(BOTH ' ' FROM "p_column"));
   END IF;
-  IF "p_column" = 'user_id' THEN
+  IF "p_column" = 'user_uuid' THEN
     CALL "users"."assert_exists"("p_value"::uuid);
     RETURN QUERY
       SELECT *

@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION "tasks"."duplicate_task"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
-  IN "p_task_id" "tasks"."task"."task_id"%TYPE
+  IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE
 )
   RETURNS "lists"."list"."list_uuid"%TYPE
   LANGUAGE 'plpgsql'
@@ -8,16 +8,16 @@ AS
 $$
 DECLARE
   "current_task" "tasks"."task"%ROWTYPE;
-  "new_task_id"  "tasks"."task"."task_id"%TYPE;
+  "new_task_uuid"  "tasks"."task"."task_uuid"%TYPE;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "tasks"."assert_task_exists_somewhere"("p_owner_id", "p_task_id");
+  CALL "tasks"."assert_task_exists_somewhere"("p_owner_id", "p_task_uuid");
   SELECT *
   INTO "current_task"
   FROM "tasks"."task"
   WHERE "owner_uuid" = "p_owner_id"
-    AND "task_id" = "p_task_id";
-  "new_task_id" := "tasks"."make_task"("p_owner_id",
+    AND "task_uuid" = "p_task_uuid";
+  "new_task_uuid" := "tasks"."make_task"("p_owner_id",
                                        "current_task"."list_uuid",
                                        ROW ("current_task"."title",
                                          "current_task"."headline",
@@ -27,6 +27,6 @@ BEGIN
                                          "current_task"."due_date",
                                          "current_task"."remind_at"));
   /* TODO: Duplicate all steps and attachments.  */
-  RETURN "new_task_id";
+  RETURN "new_task_uuid";
 END;
 $$;

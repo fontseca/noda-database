@@ -1,5 +1,5 @@
 CREATE OR REPLACE FUNCTION "users"."unblock"(
-  IN "p_user_id" "users"."user"."user_uuid"%TYPE
+  IN "p_user_uuid" "users"."user"."user_uuid"%TYPE
 )
   RETURNS BOOLEAN
   LANGUAGE 'plpgsql'
@@ -10,7 +10,7 @@ DECLARE
 BEGIN
   WITH "user_to_unblock" AS
          (DELETE FROM "users"."blocked_user"
-           WHERE "user_uuid" = "p_user_id"
+           WHERE "user_uuid" = "p_user_uuid"
            RETURNING *)
   INSERT
   INTO "users"."user" ("user_uuid",

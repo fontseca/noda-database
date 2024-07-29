@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS "tasks"."step"
 (
   "step_uuid"    uuid PRIMARY KEY NOT NULL DEFAULT "addons"."uuid_generate_v4"(),
-  "task_uuid"    uuid             NOT NULL REFERENCES "tasks"."task" ("task_id"),
+  "task_uuid"    uuid             NOT NULL REFERENCES "tasks"."task" ("task_uuid"),
   "order"        "common"."pos_t" NOT NULL UNIQUE,
   "description"  VARCHAR(512)              DEFAULT NULL,
   "completed_at" timestamptz               DEFAULT NULL,

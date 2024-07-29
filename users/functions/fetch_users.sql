@@ -21,8 +21,8 @@ BEGIN
         "u"."last_name", ' ',
         "u"."surname")) ~ "p_needle"
       ORDER BY (CASE WHEN "p_sort_expr" = '' THEN "u"."created_at" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+user_id' THEN "u"."user_uuid" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-user_id' THEN "u"."user_uuid" END) DESC,
+               (CASE WHEN "p_sort_expr" = '+user_uuid' THEN "u"."user_uuid" END) ASC,
+               (CASE WHEN "p_sort_expr" = '-user_uuid' THEN "u"."user_uuid" END) DESC,
                (CASE WHEN "p_sort_expr" = '+first_name' THEN "u"."first_name" END) ASC,
                (CASE WHEN "p_sort_expr" = '-first_name' THEN "u"."first_name" END) DESC,
                (CASE WHEN "p_sort_expr" = '+middle_name' THEN "u"."middle_name" END) ASC,

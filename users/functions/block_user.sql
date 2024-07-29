@@ -1,5 +1,5 @@
 CREATE OR REPLACE FUNCTION "users"."block"(
-  IN "p_user_id" "users"."user"."user_uuid"%TYPE,
+  IN "p_user_uuid" "users"."user"."user_uuid"%TYPE,
   IN "p_blocked_by" "users"."user"."user_uuid"%TYPE,
   IN "p_reason" VARCHAR(512)
 )
@@ -10,10 +10,10 @@ $$
 DECLARE
   "affected_rows" INTEGER;
 BEGIN
-  CALL "users"."assert_exists"("p_user_id");
+  CALL "users"."assert_exists"("p_user_uuid");
   WITH "user_to_block" AS
          (DELETE FROM "users"."user"
-           WHERE "user_uuid" = "p_user_id"
+           WHERE "user_uuid" = "p_user_uuid"
            RETURNING *)
   INSERT
   INTO "blocked_user" ("user_uuid",
@@ -49,13 +49,13 @@ END;
 $$;
 
 CREATE OR REPLACE FUNCTION "users"."block"(
-  IN "p_user_id" "users"."user"."user_uuid"%TYPE
+  IN "p_user_uuid" "users"."user"."user_uuid"%TYPE
 )
   RETURNS BOOLEAN
   LANGUAGE 'plpgsql'
 AS
 $$
 BEGIN
-  RETURN "users"."block"("p_user_id", NULL, NULL);
+  RETURN "users"."block"("p_user_uuid", NULL, NULL);
 END;
 $$;

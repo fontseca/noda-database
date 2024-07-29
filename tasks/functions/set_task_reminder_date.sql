@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION "tasks"."set_task_reminder_date"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
-  IN "p_list_id" "tasks"."task"."task_id"%TYPE,
-  IN "p_task_id" "tasks"."task"."task_id"%TYPE,
+  IN "p_list_uuid" "tasks"."task"."task_uuid"%TYPE,
+  IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE,
   IN "p_remind_at" timestamptz
 )
   RETURNS BOOLEAN
@@ -13,8 +13,8 @@ DECLARE
   "task_due_date" timestamptz;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_id");
-  CALL "tasks"."assert_task_exists"("p_owner_id", "p_list_id", "p_task_id");
+  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "tasks"."assert_task_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
   IF "p_remind_at" <= now() THEN
     RETURN FALSE;
   END IF;
@@ -22,8 +22,8 @@ BEGIN
   INTO "task_due_date"
   FROM "tasks"."task" "t"
   WHERE "t"."owner_uuid" = "p_owner_id"
-    AND "t"."list_uuid" = "p_list_id"
-    AND "t"."task_id" = "p_task_id";
+    AND "t"."list_uuid" = "p_list_uuid"
+    AND "t"."task_uuid" = "p_task_uuid";
   IF "task_due_date" IS NOT NULL AND "p_remind_at" >= "task_due_date" THEN
     RETURN FALSE;
   END IF;
@@ -31,8 +31,8 @@ BEGIN
      (SELECT "t"."remind_at"
       FROM "tasks"."task" "t"
       WHERE "t"."owner_uuid" = "p_owner_id"
-        AND "t"."list_uuid" = "p_list_id"
-        AND "t"."task_id" = "p_task_id")
+        AND "t"."list_uuid" = "p_list_uuid"
+        AND "t"."task_uuid" = "p_task_uuid")
   THEN
     RETURN FALSE;
   END IF;
@@ -40,8 +40,8 @@ BEGIN
   SET "remind_at"  = "p_remind_at",
       "updated_at" = now()
   WHERE "tasks"."task"."owner_uuid" = "p_owner_id"
-    AND "tasks"."task"."list_uuid" = "p_list_id"
-    AND "tasks"."task"."task_id" = "p_task_id";
+    AND "tasks"."task"."list_uuid" = "p_list_uuid"
+    AND "tasks"."task"."task_uuid" = "p_task_uuid";
   GET DIAGNOSTICS "affected_rows" := ROW_COUNT;
   RETURN "affected_rows";
 END;

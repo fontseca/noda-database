@@ -11,21 +11,20 @@ CREATE OR REPLACE FUNCTION "tasks"."fetch_tasks_from_today_list"(
 AS
 $$
 DECLARE
-  "today_list_id" "lists"."list"."list_uuid"%TYPE;
+  "today_list_uuid" "lists"."list"."list_uuid"%TYPE;
 BEGIN
-  SELECT "lists"."get_today_list_id"("p_owner_id")
-  INTO "today_list_id";
-  IF "today_list_id" IS NULL THEN
+  SELECT "lists"."get_today_list_uuid"("p_owner_id")
+  INTO "today_list_uuid";
+  IF "today_list_uuid" IS NULL THEN
     RETURN;
   END IF;
   RETURN QUERY
     SELECT *
     FROM "tasks"."fetch_tasks"("p_owner_id",
-                               "today_list_id",
+                               "today_list_uuid",
                                "p_page",
                                "p_rpp",
                                "p_needle",
                                "p_sort_expr");
 END;
 $$;
-
