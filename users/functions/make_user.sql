@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION "users"."make"(
   IN "p_middle_name" TEXT,
   IN "p_last_name" TEXT,
   IN "p_surname" TEXT,
-  IN "p_email" "users".email_t,
+  IN "p_email" "common"."email_t",
   IN "p_password" TEXT
 )
   RETURNS uuid

@@ -7,11 +7,11 @@ CREATE TABLE IF NOT EXISTS "users"."user"
   "last_name"   VARCHAR(64)                      DEFAULT NULL,
   "surname"     VARCHAR(64)                      DEFAULT NULL,
   "picture_url" VARCHAR(2048)                    DEFAULT NULL,
-  "email"       email_t UNIQUE,
+  "email"       "common"."email_t" UNIQUE,
   "password"    TEXT        NOT NULL CHECK ("password" <> ''),
   "created_at"  timestamptz NOT NULL             DEFAULT current_timestamp,
   "updated_at"  timestamptz NOT NULL             DEFAULT current_timestamp
 );
 
-COMMENT ON TABLE"users"."user"
+COMMENT ON TABLE "users"."user"
   IS 'system user with personal information and account details';

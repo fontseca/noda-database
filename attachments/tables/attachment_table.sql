@@ -1,16 +1,13 @@
-CREATE TABLE IF NOT EXISTS "attachment"
+CREATE TABLE IF NOT EXISTS "attachments"."attachment"
 (
-  "attachment_id" UUID NOT NULL PRIMARY KEY DEFAULT uuid_generate_v4 (),
-  "owner_uuid"      UUID NOT NULL REFERENCES"users"."user" ("user_uuid"),
-  "task_id"       UUID NOT NULL REFERENCES "task" ("task_id"),
-  "file_name"     VARCHAR(255) NOT NULL,
+  "attachment_id" uuid          NOT NULL PRIMARY KEY DEFAULT "addons"."uuid_generate_v4"(),
+  "owner_uuid"    uuid          NOT NULL REFERENCES "users"."user" ("user_uuid"),
+  "task_id"       uuid          NOT NULL REFERENCES "tasks"."task" ("task_id"),
+  "file_name"     VARCHAR(255)  NOT NULL,
   "file_url"      VARCHAR(2048) NOT NULL,
-  "created_at"    TIMESTAMPTZ NOT NULL DEFAULT now (),
-  "updated_at"    TIMESTAMPTZ NOT NULL DEFAULT now ()
+  "created_at"    timestamptz   NOT NULL             DEFAULT now(),
+  "updated_at"    timestamptz   NOT NULL             DEFAULT now()
 );
 
-ALTER TABLE "attachment"
-   OWNER TO "noda";
-
-COMMENT ON TABLE "attachment"
-              IS 'Stores files associated with functions.';
+COMMENT ON TABLE "attachments"."attachment"
+  IS 'Stores files associated with functions.';

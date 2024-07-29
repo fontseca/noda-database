@@ -1,9 +1,9 @@
 CREATE OR REPLACE FUNCTION "lists"."update"(
   IN "p_owner_id" "lists"."list"."owner_uuid"%TYPE,
   IN "p_group_id" "lists"."list"."group_uuid"%TYPE,
-  IN "p_list_id" "list"."list_uuid"%TYPE,
-  IN "p_l_name" "list"."name"%TYPE,
-  IN "p_l_desc" "list"."description"%TYPE
+  IN "p_list_id" "lists"."list"."list_uuid"%TYPE,
+  IN "p_l_name" "lists"."list"."name"%TYPE,
+  IN "p_l_desc" "lists"."list"."description"%TYPE
 )
   RETURNS BOOLEAN
   LANGUAGE 'plpgsql'

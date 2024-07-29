@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION "lists"."move"(
-  IN "p_owner_id" "list"."owner_uuid"%TYPE,
-  IN "p_list_id" "list"."list_uuid"%TYPE,
+  IN "p_owner_id" "lists"."list"."owner_uuid"%TYPE,
+  IN "p_list_id" "lists"."list"."list_uuid"%TYPE,
   IN "p_dst_group_id" "lists"."list"."group_uuid"%TYPE
 )
   RETURNS BOOLEAN

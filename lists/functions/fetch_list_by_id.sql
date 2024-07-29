@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION "lists"."fetch_by_id"(
   IN "p_owner_id" "lists"."list"."owner_uuid"%TYPE,
   IN "p_group_id" "lists"."list"."group_uuid"%TYPE,
-  IN "p_list_id" "list"."list_uuid"%TYPE
+  IN "p_list_id" "lists"."list"."list_uuid"%TYPE
 )
   RETURNS SETOF "lists"."list"
   LANGUAGE 'plpgsql'
