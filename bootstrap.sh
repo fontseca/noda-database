@@ -67,7 +67,7 @@ psql --username "${username}" \
      --file "$PROJECT_DIR/users/functions/fetch_users.sql" \
      --file "$PROJECT_DIR/users/functions/fetch_user_by.sql" \
      --file "$PROJECT_DIR/users/functions/fetch_user_by_email.sql" \
-     --file "$PROJECT_DIR/users/functions/fetch_user_by_id.sql" \
+     --file "$PROJECT_DIR/users/functions/fetch_user_by_uuid.sql" \
      --file "$PROJECT_DIR/users/functions/fetch_blocked_users.sql" \
      --file "$PROJECT_DIR/users/functions/promote_user_to_admin.sql" \
      --file "$PROJECT_DIR/users/functions/unblock_user.sql" \
@@ -88,7 +88,7 @@ psql --username "${username}" \
      --file "$PROJECT_DIR/groups/tables/group_table.sql" \
      --file "$PROJECT_DIR/groups/procedures/assert_group_exists.sql" \
      --file "$PROJECT_DIR/groups/functions/delete_group.sql" \
-     --file "$PROJECT_DIR/groups/functions/fetch_group_by_id.sql" \
+     --file "$PROJECT_DIR/groups/functions/fetch_group_by_uuid.sql" \
      --file "$PROJECT_DIR/groups/functions/fetch_groups.sql" \
      --file "$PROJECT_DIR/groups/functions/make_group.sql" \
      --file "$PROJECT_DIR/groups/functions/update_group.sql" \
@@ -103,12 +103,12 @@ psql --username "${username}" \
      --file "$PROJECT_DIR/lists/functions/delete_list.sql" \
      --file "$PROJECT_DIR/lists/functions/duplicate_list.sql" \
      --file "$PROJECT_DIR/lists/functions/fetch_grouped_lists.sql" \
-     --file "$PROJECT_DIR/lists/functions/fetch_list_by_id.sql" \
+     --file "$PROJECT_DIR/lists/functions/fetch_list_by_uuid.sql" \
      --file "$PROJECT_DIR/lists/functions/fetch_lists.sql" \
      --file "$PROJECT_DIR/lists/functions/fetch_scattered_lists.sql" \
-     --file "$PROJECT_DIR/lists/functions/get_deferred_list_id.sql" \
-     --file "$PROJECT_DIR/lists/functions/get_today_list_id.sql" \
-     --file "$PROJECT_DIR/lists/functions/get_tomorrow_list_id.sql" \
+     --file "$PROJECT_DIR/lists/functions/get_deferred_list_uuid.sql" \
+     --file "$PROJECT_DIR/lists/functions/get_today_list_uuid.sql" \
+     --file "$PROJECT_DIR/lists/functions/get_tomorrow_list_uuid.sql" \
      --file "$PROJECT_DIR/lists/functions/make_deferred_list.sql" \
      --file "$PROJECT_DIR/lists/functions/make_list.sql" \
      --file "$PROJECT_DIR/lists/functions/make_today_list.sql" \
@@ -130,7 +130,7 @@ psql --username "${username}" \
      --file "$PROJECT_DIR/tasks/functions/defer_tasks_in_today_list.sql" \
      --file "$PROJECT_DIR/tasks/functions/delete_task.sql" \
      --file "$PROJECT_DIR/tasks/functions/duplicate_task.sql" \
-     --file "$PROJECT_DIR/tasks/functions/fetch_task_by_id.sql" \
+     --file "$PROJECT_DIR/tasks/functions/fetch_task_by_uuid.sql" \
      --file "$PROJECT_DIR/tasks/functions/fetch_tasks_from_deferred_list.sql" \
      --file "$PROJECT_DIR/tasks/functions/fetch_tasks_from_today_list.sql" \
      --file "$PROJECT_DIR/tasks/functions/fetch_tasks_from_tomorrow_list.sql" \
