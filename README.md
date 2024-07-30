@@ -15,7 +15,7 @@ interactions. This is the PostgreSQL database repository for the **NODA** projec
 ## Installation
 
 For installing the database, follow the instructions
-provided [in this repository](https://github.com/fontseca/noda).
+provided [here](https://github.com/fontseca/noda-tasks-management-tool-api?tab=readme-ov-file#installation).
 
 ## Project structure
 
