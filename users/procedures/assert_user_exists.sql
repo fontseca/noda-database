@@ -19,7 +19,7 @@ BEGIN
   ELSE
     "user_uuid_txt" := '(NULL)';
   END IF;
-  RAISE EXCEPTION 'nonexistent user with ID "%"', "user_uuid_txt"
-    USING HINT = 'Please check the given user ID.';
+  RAISE EXCEPTION 'nonexistent user with UUID "%"', "user_uuid_txt"
+    USING HINT = 'Please check the given user UUID.';
 END;
 $$;

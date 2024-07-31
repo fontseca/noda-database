@@ -21,7 +21,7 @@ BEGIN
   ELSE
     "list_uuid_txt" := '(NULL)';
   END IF;
-  RAISE EXCEPTION 'nonexistent list with ID "%"', "list_uuid_txt"
-    USING HINT = 'Please check the given list ID.';
+  RAISE EXCEPTION 'nonexistent list with UUID "%"', "list_uuid_txt"
+    USING HINT = 'Please check the given list UUID.';
 END;
 $$;

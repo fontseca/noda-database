@@ -4,7 +4,7 @@ CREATE OR REPLACE FUNCTION "users"."update"(
   IN "p_middle_name" "users"."user"."middle_name"%TYPE,
   IN "p_last_name" "users"."user"."last_name"%TYPE,
   IN "p_surname" "users"."user"."surname"%TYPE,
-  IN "p_email" "users"."user"."email"%TYPE,
+  IN "p_email" TEXT,
   IN "p_picture_url" "users"."user"."picture_url"%TYPE,
   IN "p_password" "users"."user"."password"%TYPE
 )
@@ -55,9 +55,9 @@ BEGIN
       "middle_name" = coalesce(nullif(trim("p_middle_name"), ''), "old_middle_name"),
       "last_name"   = coalesce(nullif(trim("p_last_name"), ''), "old_last_name"),
       "surname"     = coalesce(nullif(trim("p_surname"), ''), "old_surname"),
-      "email"       = coalesce(nullif(trim("p_email"), ''), "old_email"),
+      "email"       = coalesce(nullif(trim("p_email"), ''), "old_email")::"common"."email_t",
       "picture_url" = coalesce(nullif(trim("p_picture_url"), ''), "old_picture_url"),
-      "password"    = coalesce(nullif(trim("p_password"), ''), "old_password"),
+      "password"    = coalesce(nullif(trim("p_password"::TEXT), ''), "old_password"::TEXT)::bytea,
       "updated_at"  = current_timestamp
   WHERE "users"."user"."user_uuid" = "p_user_uuid";
   GET DIAGNOSTICS "rows_affected" = ROW_COUNT;

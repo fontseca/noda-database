@@ -12,7 +12,7 @@ BEGIN
   WHERE "key" = NEW."key"
     AND "user_uuid" = NEW."user_uuid";
   IF "n_settings" >= 1 THEN
-    RAISE EXCEPTION 'Key (key)=(%) is already set for user with ID ''%s''', NEW."key", NEW."user_uuid";
+    RAISE EXCEPTION 'Key (key)=(%) is already set for user with UUID ''%s''', NEW."key", NEW."user_uuid";
   END IF;
   RETURN NEW;
 END;

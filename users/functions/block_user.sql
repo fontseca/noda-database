@@ -17,7 +17,7 @@ BEGIN
            RETURNING *)
   INSERT
   INTO "blocked_user" ("user_uuid",
-                       "role_uuid",
+                       "role_id",
                        "first_name",
                        "middle_name",
                        "last_name",
@@ -30,7 +30,7 @@ BEGIN
                        "reason",
                        "blocked_by")
   SELECT "b"."user_uuid",
-         "b"."role_uuid",
+         "b"."role_id",
          "b"."first_name",
          "b"."middle_name",
          "b"."last_name",

@@ -9,9 +9,9 @@ AS
 $$
 DECLARE
   "inserted_id"       "tasks"."task"."task_uuid"%TYPE;
-  "actual_list_uuid"    "tasks"."task"."task_uuid"%TYPE := "p_list_uuid";
-  "n_similar_titles"  INT                           := 0;
-  "actual_list_title" "tasks"."task"."title"%TYPE   := "p_task_creation"."title";
+  "actual_list_uuid"  "tasks"."task"."task_uuid"%TYPE := "p_list_uuid";
+  "n_similar_titles"  INT                             := 0;
+  "actual_list_title" "tasks"."task"."title"%TYPE     := "p_task_creation"."title";
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
   IF "actual_list_uuid" IS NOT NULL THEN
@@ -26,7 +26,7 @@ BEGIN
   INTO "n_similar_titles"
   FROM "tasks"."task" "t"
   WHERE "list_uuid" = "p_list_uuid"
-    AND regexp_count("t"."title", '^' || "common"."quote_meta"("actual_list_title") || '(?: \(\d+\))?$') = 1;
+    AND regexp_count("t"."title", '^' "||" "common"."quote_meta"("actual_list_title") "||" '(?: \(\d+\))?$') = 1;
   IF "n_similar_titles" > 0 THEN
     "actual_list_title" := concat("actual_list_title", ' ', '(', "n_similar_titles", ')');
   END IF;

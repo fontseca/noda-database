@@ -21,7 +21,7 @@ BEGIN
   ELSE
     "group_uuid_txt" := '(NULL)';
   END IF;
-  RAISE EXCEPTION 'nonexistent group with ID "%"', "group_uuid_txt"
-    USING HINT = 'Please check the given group ID.';
+  RAISE EXCEPTION 'nonexistent group with UUID "%"', "group_uuid_txt"
+    USING HINT = 'Please check the given group UUID.';
 END;
 $$;

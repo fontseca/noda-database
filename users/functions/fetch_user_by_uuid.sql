@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "users"."fetch_by_id"(
+CREATE OR REPLACE FUNCTION "users"."fetch_by_uuid"(
   IN "p_user_uuid" "users"."user"."user_uuid"%TYPE
 )
   RETURNS "users"."user"

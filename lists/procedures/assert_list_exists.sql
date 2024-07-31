@@ -10,7 +10,7 @@ DECLARE
   "n_records"                INT;
   "list_uuid_txt"              TEXT    := "p_list_uuid"::TEXT;
   "is_grouped_list" CONSTANT BOOLEAN := "p_group_uuid" IS NOT NULL;
-  "hint"                     TEXT    := 'Please check the given list ID.';
+  "hint"                     TEXT    := 'Please check the given list UUID.';
 BEGIN
   IF "is_grouped_list" THEN
     CALL "groups"."assert_exists"("p_owner_id", "p_group_uuid");
@@ -33,9 +33,9 @@ BEGIN
     "list_uuid_txt" := '(NULL)';
   END IF;
   IF NOT "is_grouped_list" THEN
-    "hint" := 'Please check the given list ID or whether the list is scattered.';
+    "hint" := 'Please check the given list UUID or whether the list is scattered.';
   END IF;
-  RAISE EXCEPTION 'nonexistent list with ID "%"', "list_uuid_txt"
+  RAISE EXCEPTION 'nonexistent list with UUID "%"', "list_uuid_txt"
     USING HINT = "hint";
 END;
 $$;

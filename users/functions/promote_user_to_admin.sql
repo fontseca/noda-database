@@ -10,7 +10,7 @@ DECLARE
   "actual_role"   INTEGER;
 BEGIN
   CALL "users"."assert_exists"("p_user_uuid");
-  SELECT "role_uuid"
+  SELECT "role_id"
   INTO "actual_role"
   FROM "users"."user"
   WHERE "user_uuid" = "p_user_uuid";
@@ -18,7 +18,7 @@ BEGIN
     RETURN FALSE;
   END IF;
   UPDATE "users"."user"
-  SET "role_uuid"  = 1,
+  SET "role_id"  = 1,
       "updated_at" = current_timestamp
   WHERE "user_uuid" = "p_user_uuid";
   GET DIAGNOSTICS "affected_rows" = ROW_COUNT;

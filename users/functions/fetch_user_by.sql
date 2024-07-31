@@ -22,8 +22,8 @@ BEGIN
     RETURN QUERY
       SELECT *
       FROM "users"."user"
-      WHERE "email" = "p_value"::"users"."email_t";
-    IF NOT "FOUND" THEN
+      WHERE "email" = "p_value"::"common"."email_t";
+    IF NOT FOUND THEN
       IF "p_value" IS NULL THEN
         "p_value" := '(NULL)';
       END IF;

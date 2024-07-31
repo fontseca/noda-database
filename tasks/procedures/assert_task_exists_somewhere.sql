@@ -21,7 +21,7 @@ BEGIN
   ELSE
     "task_uuid_txt" := '(NULL)';
   END IF;
-  RAISE EXCEPTION 'nonexistent task with ID "%"', "task_uuid_txt"
-    USING HINT = 'Please check the given task ID.';
+  RAISE EXCEPTION 'nonexistent task with UUID "%"', "task_uuid_txt"
+    USING HINT = 'Please check the given task UUID.';
 END;
 $$;

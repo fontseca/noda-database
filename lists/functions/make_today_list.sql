@@ -13,7 +13,7 @@ BEGIN
   SELECT "lists"."get_today_list_uuid"("p_owner_id")
   INTO "existent_list_uuid";
   IF "existent_list_uuid" IS NOT NULL THEN
-    RAISE EXCEPTION 'today list already exists for user with ID "%"', "p_owner_id"
+    RAISE EXCEPTION 'today list already exists for user with UUID "%"', "p_owner_id"
       USING HINT = 'Function "make_today_list" should be invoked once per user.';
   END IF;
   INSERT INTO "lists"."list" ("owner_uuid", "group_uuid", "name", "description")

@@ -14,7 +14,7 @@ BEGIN
            RETURNING *)
   INSERT
   INTO "users"."user" ("user_uuid",
-                       "role_uuid",
+                       "role_id",
                        "first_name",
                        "middle_name",
                        "last_name",
@@ -25,7 +25,7 @@ BEGIN
                        "created_at",
                        "updated_at")
   SELECT "user_uuid",
-         "role_uuid",
+         "role_id",
          "first_name",
          "middle_name",
          "last_name",

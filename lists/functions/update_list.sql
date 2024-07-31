@@ -38,8 +38,8 @@ BEGIN
     RETURN FALSE;
   END IF;
   UPDATE "lists"."list"
-  SET "name"        = coalesce("p_l_name", "old_l_name"),
-      "description" = coalesce("p_l_desc", "old_l_desc"),
+  SET "name"        = coalesce(nullif("p_l_name", ''), "old_l_name"),
+      "description" = coalesce(nullif("p_l_desc", ''), "old_l_desc"),
       "updated_at"  = current_timestamp
   WHERE "owner_uuid" = "p_owner_id"
     AND CASE
