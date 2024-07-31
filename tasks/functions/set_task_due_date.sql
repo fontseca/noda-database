@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."set_task_due_date"(
+CREATE OR REPLACE FUNCTION "tasks"."set_due_date"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."task_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE,
@@ -12,8 +12,8 @@ DECLARE
   "affected_rows" INTEGER;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
-  CALL "tasks"."assert_task_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "tasks"."assert_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
   IF now() >= "p_due_date" THEN
     RETURN FALSE;
   END IF;

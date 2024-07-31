@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."restore_task_from_trash"(
+CREATE OR REPLACE FUNCTION "tasks"."restore_from_trash"(
   IN "p_owner_id" "tasks"."task"."task_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."list_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE
@@ -12,7 +12,7 @@ DECLARE
   "n_inserted_rows" INTEGER;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
   IF 0 = (SELECT count(1)
           FROM "tasks"."trashed_task" "t"
           WHERE "t"."owner_uuid" = "p_owner_id"

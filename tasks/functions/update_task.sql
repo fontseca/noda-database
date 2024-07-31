@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."update_task"(
+CREATE OR REPLACE FUNCTION "tasks"."update"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."list_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE,
@@ -14,7 +14,7 @@ DECLARE
   "affected_rows" INTEGER := 0;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "tasks"."assert_task_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
+  CALL "tasks"."assert_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
   SELECT "title",
          "headline",
          "description"

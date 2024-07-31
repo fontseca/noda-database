@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."make_task"(
+CREATE OR REPLACE FUNCTION "tasks"."make"(
   IN "p_owner_id" "users"."user"."user_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."list_uuid"%TYPE,
   IN "p_task_creation" "tasks"."task_creation_t"
@@ -26,7 +26,7 @@ BEGIN
   INTO "n_similar_titles"
   FROM "tasks"."task" "t"
   WHERE "list_uuid" = "p_list_uuid"
-    AND regexp_count("t"."title", '^' "||" "common"."quote_meta"("actual_list_title") "||" '(?: \(\d+\))?$') = 1;
+    AND regexp_count("t"."title", '^' || "common"."quote_meta"("actual_list_title") || '(?: \(\d+\))?$') = 1;
   IF "n_similar_titles" > 0 THEN
     "actual_list_title" := concat("actual_list_title", ' ', '(', "n_similar_titles", ')');
   END IF;

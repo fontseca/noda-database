@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "groups"."fetch_by_id"(
+CREATE OR REPLACE FUNCTION "groups"."fetch_by_uuid"(
   IN "p_owner_id" "groups"."group"."owner_uuid"%TYPE,
   IN "p_group_uuid" "groups"."group"."group_uuid"%TYPE
 )

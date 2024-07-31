@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."fetch_task_by_id"(
+CREATE OR REPLACE FUNCTION "tasks"."fetch_by_uuid"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."list_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE
@@ -9,8 +9,8 @@ AS
 $$
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
-  CALL "tasks"."assert_task_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "tasks"."assert_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
   RETURN QUERY
     SELECT *
     FROM "tasks"."task" "t"

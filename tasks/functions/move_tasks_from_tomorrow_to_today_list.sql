@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."move_tasks_from_tomorrow_to_today_list"(
+CREATE OR REPLACE FUNCTION "tasks"."move_all_from_tomorrow_to_today_list"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE
 )
   RETURNS INTEGER
@@ -9,7 +9,7 @@ $$
 DECLARE
   "today_list_uuid"    "tasks"."task"."list_uuid"%TYPE;
   "tomorrow_list_uuid" "tasks"."task"."list_uuid"%TYPE;
-  "n_updated_tasks"  INTEGER;
+  "n_updated_tasks"    INTEGER;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
   "today_list_uuid" := "lists"."get_today_list_uuid"("p_owner_id");

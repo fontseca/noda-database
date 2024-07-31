@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."fetch_tasks"(
+CREATE OR REPLACE FUNCTION "tasks"."fetch"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."list_uuid"%TYPE,
   IN "p_page" BIGINT,
@@ -13,7 +13,7 @@ AS
 $$
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
   CALL "common"."validate_rpp_and_page"("p_rpp", "p_page");
   CALL "common"."gen_search_pattern"("p_needle");
   CALL "common"."validate_sort_expr"("p_sort_expr");

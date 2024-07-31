@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE "tasks"."assert_task_exists_somewhere"(
+CREATE OR REPLACE PROCEDURE "tasks"."assert_exists_somewhere"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE
 )
@@ -6,7 +6,7 @@ CREATE OR REPLACE PROCEDURE "tasks"."assert_task_exists_somewhere"(
 AS
 $$
 DECLARE
-  "n_records"   INT;
+  "n_records"     INT;
   "task_uuid_txt" TEXT := "p_task_uuid"::TEXT;
 BEGIN
   IF "p_task_uuid" IS NOT NULL THEN

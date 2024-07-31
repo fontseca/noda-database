@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."move_task_to_tomorrow_list"(
+CREATE OR REPLACE FUNCTION "tasks"."move_one_to_tomorrow_list"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE
 )
@@ -12,7 +12,7 @@ DECLARE
   "n_affected_rows"  INTEGER;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "tasks"."assert_task_exists_somewhere"("p_owner_id", "p_task_uuid");
+  CALL "tasks"."assert_exists_somewhere"("p_owner_id", "p_task_uuid");
   "tomorrow_list_uuid" := "lists"."get_tomorrow_list_uuid"("p_owner_id");
   IF "tomorrow_list_uuid" IS NULL THEN
     RETURN FALSE;

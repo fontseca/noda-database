@@ -12,7 +12,7 @@ DECLARE
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
   CALL "lists"."assert_is_not_special_list"("p_owner_id", "p_list_uuid");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
   SELECT *
   INTO "current_list"
   FROM "lists"."list"

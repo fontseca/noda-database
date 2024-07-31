@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."defer_tasks_in_today_list"(
+CREATE OR REPLACE FUNCTION "tasks"."defer_all_in_today_list"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE
 )
   RETURNS INTEGER
@@ -9,7 +9,7 @@ $$
 DECLARE
   "today_list_uuid"    "tasks"."task"."list_uuid"%TYPE;
   "deferred_list_uuid" "tasks"."task"."list_uuid"%TYPE;
-  "updated_tasks"    INTEGER;
+  "updated_tasks"      INTEGER;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
   "today_list_uuid" := "lists"."get_today_list_uuid"("p_owner_id");

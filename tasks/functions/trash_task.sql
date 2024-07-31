@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."trash_task"(
+CREATE OR REPLACE FUNCTION "tasks"."trash"(
   IN "p_owner_id" "tasks"."task"."task_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."list_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE
@@ -12,8 +12,8 @@ DECLARE
   "n_inserted_rows" INTEGER;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
-  CALL "tasks"."assert_task_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "tasks"."assert_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
   WITH "moved_task" AS
          (
            DELETE FROM "tasks"."task"

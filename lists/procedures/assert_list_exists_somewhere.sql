@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE "lists"."assert_list_exists_somewhere"(
+CREATE OR REPLACE PROCEDURE "lists"."assert_exists_somewhere"(
   IN "p_owner_id" "lists"."list"."owner_uuid"%TYPE,
   IN "p_list_uuid" "lists"."list"."list_uuid"%TYPE
 )

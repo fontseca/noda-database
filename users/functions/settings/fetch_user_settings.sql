@@ -5,14 +5,7 @@ CREATE OR REPLACE FUNCTION "users"."fetch_settings_of"(
   IN "p_needle" TEXT,
   IN "p_sort_expr" TEXT
 )
-  RETURNS TABLE
-          (
-            "key"         "users"."predefined_setting"."key"%TYPE,
-            "description" "users"."predefined_setting"."description"%TYPE,
-            "value"       "users"."predefined_setting"."default_value"%TYPE,
-            "created_at"  "users"."setting"."created_at"%TYPE,
-            "updated_at"  "users"."setting"."updated_at"%TYPE
-          )
+  RETURNS SETOF "users"."setting"
   LANGUAGE 'plpgsql'
 AS
 $$
@@ -22,11 +15,7 @@ BEGIN
   CALL "common"."validate_sort_expr"("p_sort_expr");
   CALL "common"."gen_search_pattern"("p_needle");
   RETURN QUERY
-    SELECT "us"."key",
-           "df"."description",
-           "us"."value",
-           "us"."created_at",
-           "us"."updated_at"
+    SELECT "us".*
     FROM "users"."setting" "us"
            INNER JOIN "users"."predefined_setting" "df"
                       ON "us"."key" = "df"."key"

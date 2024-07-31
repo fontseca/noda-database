@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."fetch_tasks_from_deferred_list"(
+CREATE OR REPLACE FUNCTION "tasks"."fetch_from_deferred_list"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_page" BIGINT,
   IN "p_rpp" BIGINT,
@@ -17,17 +17,17 @@ BEGIN
   INTO "deferred_list_uuid"
   FROM "lists"."user_special_list" "s"
   WHERE "s"."user_uuid" = "p_owner_id"
-    AND "s"."list_type" = 'deferred'::special_list_type_t;
+    AND "s"."list_type" = 'deferred'::"lists"."special_list_type_t";
   IF "deferred_list_uuid" IS NULL THEN
     RETURN;
   END IF;
   RETURN QUERY
     SELECT *
-    FROM "tasks"."fetch_tasks"("p_owner_id",
-                               "deferred_list_uuid",
-                               "p_page",
-                               "p_rpp",
-                               "p_needle",
-                               "p_sort_expr");
+    FROM "tasks"."fetch"("p_owner_id",
+                         "deferred_list_uuid",
+                         "p_page",
+                         "p_rpp",
+                         "p_needle",
+                         "p_sort_expr");
 END;
 $$;

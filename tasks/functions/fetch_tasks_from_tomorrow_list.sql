@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."fetch_tasks_from_tomorrow_list"(
+CREATE OR REPLACE FUNCTION "tasks"."fetch_from_tomorrow_list"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_page" BIGINT,
   IN "p_rpp" BIGINT,
@@ -20,11 +20,11 @@ BEGIN
   END IF;
   RETURN QUERY
     SELECT *
-    FROM "tasks"."fetch_tasks"("p_owner_id",
-                               "tomorrow_list_uuid",
-                               "p_page",
-                               "p_rpp",
-                               "p_needle",
-                               "p_sort_expr");
+    FROM "tasks"."fetch"("p_owner_id",
+                         "tomorrow_list_uuid",
+                         "p_page",
+                         "p_rpp",
+                         "p_needle",
+                         "p_sort_expr");
 END ;
 $$;

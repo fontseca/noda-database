@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."set_task_reminder_date"(
+CREATE OR REPLACE FUNCTION "tasks"."set_reminder_date"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."task_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE,
@@ -13,8 +13,8 @@ DECLARE
   "task_due_date" timestamptz;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
-  CALL "tasks"."assert_task_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "tasks"."assert_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
   IF "p_remind_at" <= now() THEN
     RETURN FALSE;
   END IF;

@@ -12,7 +12,7 @@ DECLARE
   "n_affected_rows"  INT;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
   CALL "groups"."assert_exists"("p_owner_id", "p_dst_group_uuid");
   SELECT "l"."group_uuid"
   INTO "current_group_uuid"

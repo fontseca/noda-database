@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."compute_next_task_pos"(
+CREATE OR REPLACE FUNCTION "tasks"."compute_next_position"(
   IN "p_list_scope" "lists"."list"."list_uuid"%TYPE
 )
   RETURNS "common"."pos_t"

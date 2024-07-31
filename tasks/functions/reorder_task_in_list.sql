@@ -10,13 +10,13 @@ CREATE OR REPLACE FUNCTION "tasks"."reorder_task_in_list"(
 AS
 $$
 DECLARE
-  "affected_task_uuid"       "tasks"."task"."task_uuid"%TYPE;
+  "affected_task_uuid"     "tasks"."task"."task_uuid"%TYPE;
   "obsolete_task_position" "common"."pos_t" := 1;
   "affected_rows"          INTEGER;
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_list_exists_somewhere"("p_owner_id", "p_list_uuid");
-  CALL "tasks"."assert_task_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
+  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
+  CALL "tasks"."assert_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
   IF "tasks"."compute_next_task_pos"("p_list_uuid") <= "target_position" THEN
     RETURN FALSE;
   END IF;

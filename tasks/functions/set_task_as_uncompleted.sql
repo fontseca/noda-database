@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION "tasks"."set_task_as_uncompleted"(
+CREATE OR REPLACE FUNCTION "tasks"."set_as_uncompleted"(
   IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
   IN "p_list_uuid" "tasks"."task"."task_uuid"%TYPE,
   IN "p_task_uuid" "tasks"."task"."task_uuid"%TYPE
