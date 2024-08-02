@@ -7,7 +7,6 @@ CREATE OR REPLACE FUNCTION "tasks"."fetch"(
   IN "p_sort_expr" TEXT
 )
   RETURNS SETOF "tasks"."task"
-  RETURNS NULL ON NULL INPUT
   LANGUAGE 'plpgsql'
 AS
 $$

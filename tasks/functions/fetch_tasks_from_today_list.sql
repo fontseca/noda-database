@@ -6,7 +6,6 @@ CREATE OR REPLACE FUNCTION "tasks"."fetch_from_today_list"(
   IN "p_sort_expr" TEXT
 )
   RETURNS SETOF "tasks"."task"
-  RETURNS NULL ON NULL INPUT
   LANGUAGE 'plpgsql'
 AS
 $$
