@@ -13,7 +13,7 @@ BEGIN
      `p_page' pages.  If not, then use the maximum value
      for a page.  */
   IF "p_rpp" <= 0 OR "p_rpp" IS NULL THEN
-    "p_rpp" := 1;
+    "p_rpp" := 100;
   END IF;
   IF "p_page" <= 0 OR "p_page" IS NULL THEN
     "p_page" := 1;
