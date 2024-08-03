@@ -17,7 +17,7 @@ BEGIN
   CALL "users"."assert_exists"("p_owner_id");
   CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
   CALL "tasks"."assert_exists"("p_owner_id", "p_list_uuid", "p_task_uuid");
-  IF "tasks"."compute_next_task_pos"("p_list_uuid") <= "target_position" THEN
+  IF "tasks"."compute_next_position"("p_list_uuid") <= "target_position" THEN
     RETURN FALSE;
   END IF;
   SELECT "t"."task_uuid",

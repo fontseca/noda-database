@@ -15,7 +15,7 @@ DECLARE
 BEGIN
   CALL "users"."assert_exists"("p_owner_id");
   IF "actual_list_uuid" IS NOT NULL THEN
-    CALL "lists"."assert_exists"("p_owner_id", NULL, "actual_list_uuid");
+    CALL "lists"."assert_exists_somewhere"("p_owner_id", "actual_list_uuid");
   ELSE
     "actual_list_uuid" := "lists"."get_today_list_uuid"("p_owner_id");
     IF "actual_list_uuid" IS NULL THEN
@@ -42,7 +42,7 @@ BEGIN
                               "remind_at")
   VALUES ("p_owner_id",
           "actual_list_uuid",
-          "tasks"."compute_next_task_pos"("p_list_uuid"),
+          "tasks"."compute_next_position"("actual_list_uuid"),
           "actual_list_title",
           nullif("p_task_creation"."headline", ''),
           nullif("p_task_creation"."description", ''),
