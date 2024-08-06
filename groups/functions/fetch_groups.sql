@@ -1,33 +1,25 @@
-CREATE OR REPLACE FUNCTION "groups"."fetch"(
-  IN "p_owner_id" "groups"."group"."owner_uuid"%TYPE,
-  IN "p_page" BIGINT,
-  IN "p_rpp" BIGINT,
-  IN "p_needle" TEXT,
-  IN "p_sort_expr" TEXT
+CREATE OR REPLACE FUNCTION "groups"."fetch"
+(
+  IN p_owner_uuid "groups"."group"."owner_uuid"%TYPE,
+  IN p_group_uuid "groups"."group"."group_uuid"%TYPE,
+  IN p_needle     TEXT,
+  IN p_page       BIGINT,
+  IN p_rpp        BIGINT
 )
   RETURNS SETOF "groups"."group"
   LANGUAGE 'plpgsql'
 AS
 $$
 BEGIN
-  CALL "users"."assert_exists"("p_owner_id");
-  CALL "common"."validate_rpp_and_page"("p_rpp", "p_page");
-  CALL "common"."gen_search_pattern"("p_needle");
-  CALL "common"."validate_sort_expr"("p_sort_expr");
+  CALL "users"."assert_exists"(p_owner_uuid);
+  CALL "common"."validate_rpp_and_page"(p_rpp, p_page);
+  CALL "common"."gen_search_pattern"(p_needle);
   RETURN QUERY
     SELECT *
-    FROM "groups"."group" "g"
-    WHERE lower(concat("g"."name", ' ', "g"."description")) ~ "p_needle"
-      ORDER BY (CASE WHEN "p_sort_expr" = '' THEN "g"."created_at" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+name' THEN "g"."name" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-name' THEN "g"."name" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+description' THEN "g"."description" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-description' THEN "g"."description" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+created_at' THEN "g"."created_at" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-created_at' THEN "g"."created_at" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+updated_at' THEN "g"."updated_at" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-updated_at' THEN "g"."updated_at" END) DESC
-         LIMIT "p_rpp"
-        OFFSET ("p_rpp" * ("p_page" - 1));
+      FROM "groups"."group" g
+     WHERE lower(concat(g."name", ' ', g."description")) ~ p_needle
+       AND g."owner_uuid" = p_owner_uuid
+       AND CASE WHEN p_group_uuid <> "addons"."uuid_nil"() AND p_group_uuid IS NOT NULL THEN g."group_uuid" = p_group_uuid ELSE TRUE END
+     LIMIT p_rpp OFFSET (p_rpp * (p_page - 1));
 END;
 $$;

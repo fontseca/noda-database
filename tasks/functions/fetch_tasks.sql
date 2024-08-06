@@ -1,55 +1,31 @@
-CREATE OR REPLACE FUNCTION "tasks"."fetch"(
-  IN "p_owner_id" "tasks"."task"."owner_uuid"%TYPE,
-  IN "p_list_uuid" "tasks"."task"."list_uuid"%TYPE,
-  IN "p_page" BIGINT,
-  IN "p_rpp" BIGINT,
-  IN "p_needle" TEXT,
-  IN "p_sort_expr" TEXT
+CREATE OR REPLACE FUNCTION "tasks"."fetch"
+(
+  p_owner_uuid "users"."user"."user_uuid"%TYPE,
+  p_group_uuid "groups"."group"."group_uuid"%TYPE,
+  p_list_uuid  "lists"."list"."list_uuid"%TYPE,
+  p_task_uuid  "tasks"."task"."task_uuid"%TYPE,
+  p_needle     TEXT,
+  p_page       BIGINT,
+  p_rpp        BIGINT
 )
   RETURNS SETOF "tasks"."task"
   LANGUAGE 'plpgsql'
 AS
 $$
 BEGIN
-  CALL "users"."assert_exists"("p_owner_id");
-  CALL "lists"."assert_exists_somewhere"("p_owner_id", "p_list_uuid");
-  CALL "common"."validate_rpp_and_page"("p_rpp", "p_page");
-  CALL "common"."gen_search_pattern"("p_needle");
-  CALL "common"."validate_sort_expr"("p_sort_expr");
+  CALL "users"."assert_exists"(p_owner_uuid);
+  CALL "common"."validate_rpp_and_page"(p_rpp, p_page);
+  CALL "common"."gen_search_pattern"(p_needle);
   RETURN QUERY
-    SELECT *
-    FROM "tasks"."task" "t"
-    WHERE "t"."owner_uuid" = "p_owner_id"
-      AND "t"."list_uuid" = "p_list_uuid"
-      AND lower(concat("t"."title", '',
-                       "t"."headline", '',
-                       "t"."description")) ~ "p_needle"
-      ORDER BY (CASE WHEN "p_sort_expr" = '' THEN "t"."position_in_list" END) ASC,
-               (CASE WHEN "p_sort_expr" = '+position_in_list' THEN "t"."position_in_list" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-position_in_list' THEN "t"."position_in_list" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+title' THEN "t"."title" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-title' THEN "t"."title" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+headline' THEN "t"."headline" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-headline' THEN "t"."headline" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+description' THEN "t"."description" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-description' THEN "t"."description" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+priority' THEN "t"."priority" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-priority' THEN "t"."priority" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+status' THEN "t"."status" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-status' THEN "t"."status" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+is_pinned' THEN "t"."is_pinned" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-is_pinned' THEN "t"."is_pinned" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+due_date' THEN "t"."due_date" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-due_date' THEN "t"."due_date" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+remind_at' THEN "t"."remind_at" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-remind_at' THEN "t"."remind_at" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+completed_at' THEN "t"."completed_at" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-completed_at' THEN "t"."completed_at" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+created_at' THEN "t"."created_at" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-created_at' THEN "t"."created_at" END) DESC,
-               (CASE WHEN "p_sort_expr" = '+updated_at' THEN "t"."updated_at" END) ASC,
-               (CASE WHEN "p_sort_expr" = '-updated_at' THEN "t"."updated_at" END) DESC
-         LIMIT "p_rpp"
-        OFFSET ("p_rpp" * ("p_page" - 1));
-END;
+    SELECT t.*
+      FROM "tasks"."task" t
+      LEFT JOIN "lists"."list" l ON l."list_uuid" = t."list_uuid"
+      LEFT JOIN "groups"."group" g ON g."group_uuid" = l."group_uuid"
+     WHERE t."owner_uuid" = p_owner_uuid
+       AND lower(concat(t."title", '', t."headline", '', t."description")) ~ p_needle
+       AND CASE WHEN p_group_uuid <> "addons"."uuid_nil"() AND p_group_uuid IS NOT NULL THEN g."group_uuid" = p_group_uuid ELSE TRUE END
+       AND CASE WHEN p_list_uuid <> "addons"."uuid_nil"() AND p_list_uuid IS NOT NULL THEN t."list_uuid" = p_list_uuid ELSE TRUE END
+       AND CASE WHEN p_task_uuid <> "addons"."uuid_nil"() AND p_task_uuid IS NOT NULL THEN t."task_uuid" = p_task_uuid ELSE TRUE END
+     LIMIT p_rpp OFFSET (p_rpp * (p_page - 1));
+END ;
 $$;
